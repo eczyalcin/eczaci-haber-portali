@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eczacı Haber Merkezi</title>
+<meta name="description" content="Türkiye eczacılık sektöründen resmi kurum duyuruları, ilaç geri çekme bildirimleri, TEB ve eczacı odaları haberlerini tek yerden takip edin." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230e7c66'/%3E%3Cpath d='M8 8h8v3.2a4 4 0 0 1-4 4v0a4 4 0 0 1-4-4V8Z' fill='none' stroke='white' stroke-width='1.6'/%3E%3Cpath d='M12 15.2V18' stroke='white' stroke-width='1.6'/%3E%3Cpath d='M9 18h6' stroke='white' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="manifest" href="./manifest.webmanifest" />
+<meta name="theme-color" content="#0e7c66" />
+<link rel="apple-touch-icon" href="./assets/icons/icon-180.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Eczacı Haber" />
+<link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 8h8v3.2a4 4 0 0 1-4 4v0a4 4 0 0 1-4-4V8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 15.2V18" stroke="currentColor" stroke-width="1.6"/><path d="M9 18h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <div>
+        <h1>Eczacı Haber Merkezi</h1>
+        <p class="tagline">Resmi kurum duyuruları, TEB ve eczacı odaları haberleri tek yerde</p>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span id="lastUpdated" class="last-updated">Veri bekleniyor…</span>
+      <button id="refreshBtn" type="button" class="refresh-btn" title="Yeniden yükle">⟳ Yenile</button>
+    </div>
+  </div>
+  <div class="search-row">
+    <input id="searchInput" type="search" placeholder="Başlıklarda ara… (örn. geri çekme, reçete, SGK)" aria-label="Haberlerde ara" />
+  </div>
+</header>
+
+<nav id="tabs" class="tabs" aria-label="Haber kategorileri"></nav>
+
+<main id="content" class="content" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <p>Bu portal, kamuya açık kaynaklardan (resmi kurum ve kuruluş siteleri) otomatik olarak toplanan başlık ve bağlantılardan oluşur. Her haberin tam metni orijinal kaynağındadır; başlığa tıklayarak kaynağa ulaşabilirsiniz.</p>
+  <p class="footer-links"><a id="sourcesLink" href="#kaynaklar">Kaynakları ve durumlarını görüntüle</a></p>
+</footer>
+
+<script src="./assets/app.js"></script>
+</body>
+</html>

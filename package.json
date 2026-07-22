@@ -1,0 +1,14 @@
+{
+  "name": "eczaci-haber-portali-scraper",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Eczacı Haber Merkezi - kaynak tarama betiği",
+  "scripts": {
+    "scrape": "node scripts/scrape.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "rss-parser": "^3.13.0"
+  }
+}

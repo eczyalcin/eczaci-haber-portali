@@ -1,0 +1,43 @@
+name: Kaynak Tanılama
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Kaynakları tanıla
+        run: node scripts/diagnose.mjs
+
+      - name: Tanılama çıktısını yükle (artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostics
+          path: diagnostics/
+          retention-days: 7
+
+      - name: Tanılama çıktısını diagnostics-output branch'ine gönder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B diagnostics-output
+          git add -f diagnostics/
+          git commit -m "chore: tanılama çıktısı (run ${{ github.run_id }})"
+          git push -f origin diagnostics-output

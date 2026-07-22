@@ -1,0 +1,693 @@
+[
+  {
+    "id": "titck-duyuru",
+    "name": "TİTCK - Duyurular",
+    "homepage": "https://www.titck.gov.tr/duyuru",
+    "category": "resmi-kurumlar",
+    "priority": 1,
+    "type": "html",
+    "listUrl": "https://www.titck.gov.tr/duyuru",
+    "selectors": {
+      "item": ".haber-container",
+      "link": "a.haber-link",
+      "title": "h1",
+      "date": "span.tarih"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı: gerçek sayfa HTML'i indirilip seçiciler yerel olarak test edildi."
+  },
+  {
+    "id": "titck-geri-cekme",
+    "name": "TİTCK - Geri Çekme / Satış Yasağı",
+    "homepage": "https://www.titck.gov.tr/duyuru?aramaTipi=geriCekme",
+    "category": "geri-cekme",
+    "priority": 1,
+    "type": "html",
+    "listUrl": "https://www.titck.gov.tr/duyuru?aramaTipi=geriCekme",
+    "selectors": {
+      "item": ".haber-container",
+      "link": "a.haber-link",
+      "title": "h1",
+      "date": "span.tarih"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı (titck-duyuru ile aynı site şablonu, geriCekme filtresiyle). Ayrıca sayfada 'https://www.titck.gov.tr/recallAnnouncementFeeds' adresinde resmi bir RSS bağlantısı bulundu ancak içeriği bu ortamdan doğrulanamadı; ileride denenebilir."
+  },
+  {
+    "id": "saglik-bakanligi",
+    "name": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+    "homepage": "https://www.saglik.gov.tr/TR-3197/basin-duyurulari.html",
+    "category": "resmi-kurumlar",
+    "priority": 1,
+    "type": "html",
+    "listUrl": "https://www.saglik.gov.tr/TR-3197/basin-duyurulari.html",
+    "selectors": {
+      "item": "table.haber_duyuru_listele_item tr",
+      "link": "a",
+      "title": "a"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı. Tarih hücreleri (gün/ay kısaltması/yıl ayrı span) ayrıştırılmıyor; sıralama taranma zamanına göre yapılır."
+  },
+  {
+    "id": "teb",
+    "name": "Türk Eczacıları Birliği",
+    "homepage": "https://www.teb.org.tr/news",
+    "category": "teb-odalar",
+    "priority": 2,
+    "type": "html",
+    "listUrl": "https://www.teb.org.tr/news",
+    "selectors": {
+      "item": ".haberListe_M .whiteContent",
+      "link": ".col_R-17 a",
+      "title": "h1"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı. Başlık, sitedeki biçimle aynı şekilde '21.07.2026 |Başlık' formatında gelir (tarih başlığın içinde).",
+    "diagnoseUrls": [
+      "https://www.teb.org.tr/content/28/Eczac%C4%B1-Odalar%C4%B1-Listesi"
+    ]
+  },
+  {
+    "id": "duzce-eczaci-odasi",
+    "name": "Düzce Eczacı Odası",
+    "homepage": "https://www.duzceeo.org/",
+    "category": "duzce",
+    "priority": 4,
+    "type": "html",
+    "listUrl": "https://www.duzceeo.org/",
+    "selectors": {
+      "item": ".news article",
+      "link": "a",
+      "title": "a",
+      "titleAttr": "title",
+      "date": "h4 span"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı."
+  },
+  {
+    "id": "ankara-eczaci-odasi",
+    "name": "Ankara Eczacı Odası",
+    "homepage": "https://www.aeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "html",
+    "listUrl": "https://www.aeo.org.tr/",
+    "selectors": {
+      "item": "#sliderAreaAnnouncementsList li",
+      "link": "a",
+      "title": "a",
+      "titleAttr": "title"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı. Tarih alanı 'Bugün' gibi göreli metinler içerdiğinden ayrıştırılmıyor; sıralama taranma zamanına göre yapılır."
+  },
+  {
+    "id": "eczacinin-sesi",
+    "name": "Eczacının Sesi",
+    "homepage": "https://www.eczacininsesi.com",
+    "category": "sektor",
+    "priority": 3,
+    "type": "html",
+    "listUrl": "https://www.eczacininsesi.com",
+    "selectors": {
+      "item": ".carousel-inner .item",
+      "link": "a",
+      "title": "img",
+      "titleAttr": "alt"
+    },
+    "verified": true,
+    "notes": "22.07.2026 tanılamasında doğrulandı. Ana sayfadaki öne çıkan haberler slider'ından (14 öğe) besleniyor."
+  },
+  {
+    "id": "istanbul-eczaci-odasi",
+    "name": "İstanbul Eczacı Odası",
+    "homepage": "http://www.istanbuleczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (1. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "izmir-eczaci-odasi",
+    "name": "İzmir Eczacı Odası",
+    "homepage": "http://www.izmireczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (3. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "adana-eczaci-odasi",
+    "name": "Adana Eczacı Odası",
+    "homepage": "http://www.adanaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (4. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "konya-eczaci-odasi",
+    "name": "Konya Eczacı Odası",
+    "homepage": "http://www.keo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (5. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "samsun-eczaci-odasi",
+    "name": "Samsun Eczacı Odası",
+    "homepage": "http://www.samsuneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (6. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "bursa-eczaci-odasi",
+    "name": "Bursa Eczacı Odası",
+    "homepage": "http://www.beo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (7. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "gaziantep-eczaci-odasi",
+    "name": "Gaziantep Eczacı Odası",
+    "homepage": "http://www.gaziantepeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (8. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "eskisehir-eczaci-odasi",
+    "name": "Eskişehir Eczacı Odası",
+    "homepage": "http://www.eskisehireo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (9. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "antalya-eczaci-odasi",
+    "name": "Antalya Eczacı Odası",
+    "homepage": "http://www.antalyaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (10. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "diyarbakir-eczaci-odasi",
+    "name": "Diyarbakır Eczacı Odası",
+    "homepage": "http://www.diyarbakireo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (11. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kayseri-eczaci-odasi",
+    "name": "Kayseri Eczacı Odası",
+    "homepage": "http://www.kayserieo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (12. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "erzurum-eczaci-odasi",
+    "name": "Erzurum Eczacı Odası",
+    "homepage": "http://www.erzurumeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (13. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kahramanmaras-eczaci-odasi",
+    "name": "Kahramanmaraş Eczacı Odası",
+    "homepage": "http://kahramanmaraseo.org/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (14. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "isparta-eczaci-odasi",
+    "name": "Isparta Eczacı Odası",
+    "homepage": "http://www.ispartaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (15. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "denizli-eczaci-odasi",
+    "name": "Denizli Eczacı Odası",
+    "homepage": "http://www.denizlieczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (16. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "zonguldak-eczaci-odasi",
+    "name": "Zonguldak Eczacı Odası",
+    "homepage": "http://www.zeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (17. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "trabzon-eczaci-odasi",
+    "name": "Trabzon Eczacı Odası",
+    "homepage": "http://www.trabzoneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (18. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "tekirdag-eczaci-odasi",
+    "name": "Tekirdağ Eczacı Odası",
+    "homepage": "http://www.teo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (19. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "sakarya-eczaci-odasi",
+    "name": "Sakarya Eczacı Odası",
+    "homepage": "http://www.seo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (20. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "aydin-eczaci-odasi",
+    "name": "Aydın Eczacı Odası",
+    "homepage": "http://www.aydineczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (21. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "malatya-eczaci-odasi",
+    "name": "Malatya Eczacı Odası",
+    "homepage": "http://www.malatyaeczaciodasi.org.tr/index.php",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (22. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "elazig-eczaci-odasi",
+    "name": "Elazığ Eczacı Odası",
+    "homepage": "http://www.elazigeczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (23. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "ordu-eczaci-odasi",
+    "name": "Ordu Eczacı Odası",
+    "homepage": "http://www.ordueczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (24. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "mersin-eczaci-odasi",
+    "name": "Mersin Eczacı Odası",
+    "homepage": "http://www.mersineczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (25. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kastamonu-eczaci-odasi",
+    "name": "Kastamonu Eczacı Odası",
+    "homepage": "http://www.kastamonueo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (26. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "sanliurfa-eczaci-odasi",
+    "name": "Şanlıurfa Eczacı Odası",
+    "homepage": "http://www.sanliurfaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (27. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "hatay-eczaci-odasi",
+    "name": "Hatay Eczacı Odası",
+    "homepage": "http://www.hatayeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (28. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "manisa-eczaci-odasi",
+    "name": "Manisa Eczacı Odası",
+    "homepage": "http://www.manisaeczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (29. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "balikesir-eczaci-odasi",
+    "name": "Balıkesir Eczacı Odası",
+    "homepage": "http://www.balikesireczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (30. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kocaeli-eczaci-odasi",
+    "name": "Kocaeli Eczacı Odası",
+    "homepage": "http://www.kocaelieo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (31. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "mugla-eczaci-odasi",
+    "name": "Muğla Eczacı Odası",
+    "homepage": "http://www.muglaeczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (32. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "afyon-eczaci-odasi",
+    "name": "Afyon Eczacı Odası",
+    "homepage": "http://www.afyoneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (33. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "aksaray-eczaci-odasi",
+    "name": "Aksaray Eczacı Odası",
+    "homepage": "http://www.aksarayeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (34. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kutahya-eczaci-odasi",
+    "name": "Kütahya Eczacı Odası",
+    "homepage": "http://www.kutahyaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (35. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "canakkale-eczaci-odasi",
+    "name": "Çanakkale Eczacı Odası",
+    "homepage": "http://www.canakkaleeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (36. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "sivas-eczaci-odasi",
+    "name": "Sivas Eczacı Odası",
+    "homepage": "http://www.sivaseo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (37. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "van-eczaci-odasi",
+    "name": "Van Eczacı Odası",
+    "homepage": "http://www.vaneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (38. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "edirne-eczaci-odasi",
+    "name": "Edirne Eczacı Odası",
+    "homepage": "http://www.edirneeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (39. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "kirklareli-eczaci-odasi",
+    "name": "Kırklareli Eczacı Odası",
+    "homepage": "http://www.kirklarelieo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (40. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "tokat-eczaci-odasi",
+    "name": "Tokat Eczacı Odası",
+    "homepage": "https://www.tokateo.org/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (41. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "giresun-eczaci-odasi",
+    "name": "Giresun Eczacı Odası",
+    "homepage": "http://www.giresuneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (42. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "mardin-eczaci-odasi",
+    "name": "Mardin Eczacı Odası",
+    "homepage": "http://www.mardineczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (43. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "batman-eczaci-odasi",
+    "name": "Batman Eczacı Odası",
+    "homepage": "http://www.batmaneczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (44. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "corum-eczaci-odasi",
+    "name": "Çorum Eczacı Odası",
+    "homepage": "http://www.corumeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (45. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "usak-eczaci-odasi",
+    "name": "Uşak Eczacı Odası",
+    "homepage": "http://www.usakeczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (46. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "amasya-eczaci-odasi",
+    "name": "Amasya Eczacı Odası",
+    "homepage": "http://www.amasyaeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (47. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "osmaniye-eczaci-odasi",
+    "name": "Osmaniye Eczacı Odası",
+    "homepage": "http://www.osmaniyeeczaciodasi.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (48. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "yozgat-eczaci-odasi",
+    "name": "Yozgat Eczacı Odası",
+    "homepage": "http://www.yozgateo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (49. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "karaman-eczaci-odasi",
+    "name": "Karaman Eczacı Odası",
+    "homepage": "http://www.karamaneo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (50. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "adiyaman-eczaci-odasi",
+    "name": "Adıyaman Eczacı Odası",
+    "homepage": "http://www.adiyamaneo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (51. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "nevsehir-eczaci-odasi",
+    "name": "Nevşehir Eczacı Odası",
+    "homepage": "http://www.nevsehireo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (52. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "nigde-eczaci-odasi",
+    "name": "Niğde Eczacı Odası",
+    "homepage": "http://www.neo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (53. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "burdur-eczaci-odasi",
+    "name": "Burdur Eczacı Odası",
+    "homepage": "http://www.burdureo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (54. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "agri-eczaci-odasi",
+    "name": "Ağrı Eczacı Odası",
+    "homepage": "https://www.agrieo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (55. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "erzincan-eczaci-odasi",
+    "name": "Erzincan Eczacı Odası",
+    "homepage": "https://erzincaneo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (56. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "sirnak-eczaci-odasi",
+    "name": "Şırnak Eczacı Odası",
+    "homepage": "https://sirnakeo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (58. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  },
+  {
+    "id": "siirt-eczaci-odasi",
+    "name": "Siirt Eczacı Odası",
+    "homepage": "https://siirteo.org.tr/",
+    "category": "teb-odalar",
+    "priority": 4,
+    "type": "auto-template",
+    "verified": false,
+    "notes": "TEB oda listesinden alındı (59. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+  }
+]
