@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T01:14:02.807Z",
+  "generatedAt": "2026-07-23T11:48:58.329Z",
   "sources": [
     {
       "id": "titck-duyuru",
@@ -215,8 +215,8 @@
       "name": "Kahramanmaraş Eczacı Odası",
       "category": "teb-odalar",
       "homepage": "http://kahramanmaraseo.org/",
-      "status": "error",
-      "error": "fetch failed",
+      "status": "needs-config",
+      "error": "Ne RSS ne de bilinen bir site şablonu eşleşti. Bu kaynak için manuel CSS seçici yapılandırması gerekiyor (bkz. README).",
       "itemCount": 0,
       "discoveredFeedUrl": null,
       "matchedTemplate": null
@@ -226,8 +226,8 @@
       "name": "Isparta Eczacı Odası",
       "category": "teb-odalar",
       "homepage": "http://www.ispartaeo.org.tr/",
-      "status": "error",
-      "error": "fetch failed",
+      "status": "needs-config",
+      "error": "Ne RSS ne de bilinen bir site şablonu eşleşti. Bu kaynak için manuel CSS seçici yapılandırması gerekiyor (bkz. README).",
       "itemCount": 0,
       "discoveredFeedUrl": null,
       "matchedTemplate": null
@@ -715,7 +715,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "23856bbb19b5bd37",
@@ -725,7 +725,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "70803db967e6a2df",
@@ -735,7 +735,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "4e9af876ace0d35a",
@@ -745,7 +745,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "03a46c46358e4848",
@@ -755,7 +755,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "fa7ae9bad266863c",
@@ -765,7 +765,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
     },
     {
       "id": "b7004a8478334476",
@@ -775,7 +775,8 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z",
+      "alsoFrom": []
     },
     {
       "id": "f91537c6d4aebe4c",
@@ -785,7 +786,518 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "3b1a3169bcf2e6ed",
+      "title": "Dünya Sağlık Arenasında Büyüyen Güç",
+      "link": "https://www.eczacininsesi.com/haber/dunya-saglik-arenasinda-buyuyen-guc.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "f7f8520e173bbcc3",
+      "title": "Dijital Dergimizin 58. Sayısı Yayında!",
+      "link": "https://www.eczacininsesi.com/haber/dijital-dergimizin-58-sayisi-yayinda.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "ea621e37fba49454",
+      "title": "Yardımcı Eczacı Teşvik Şartları",
+      "link": "https://www.eczacininsesi.com/haber/yardimci-eczaci-tesvik-sartlari.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "1d9b9f9461b65e0b",
+      "title": "Jeneriklere Yüksek Vergi",
+      "link": "https://www.eczacininsesi.com/haber/jeneriklere-yuksek-vergi.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "1d64425616a6a95c",
+      "title": "Eczacılar Rafındaki Ürünün Küresel Ortağı Oluyor!",
+      "link": "https://www.eczacininsesi.com/haber/eczacilar-rafindaki-urunun-kuresel-ortagi-oluyor.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-07-23T10:54:41.560Z"
+    },
+    {
+      "id": "41b93404ca07ae70",
+      "title": "Acil A Rh (+) Trombosit Kan İhtiyacı",
+      "link": "https://www.aeo.org.tr/acil-a-rh-trombosit-kan-ihtiyaci-937",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:40.232Z"
+    },
+    {
+      "id": "2b2177e4fec73dff",
+      "title": "Odamızdan Adalet Bakanlığı Ceza ve Tevkifevleri Genel Müdürlüğü'ne Ziyaret",
+      "link": "https://www.aeo.org.tr/odamizdan-adalet-bakanligi-ceza-ve-tevkifevleri-genel-mudurlugune-ziyaret",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:40.232Z"
+    },
+    {
+      "id": "9d7418df54874499",
+      "title": "Kamuoyuna Duyuru",
+      "link": "https://www.aeo.org.tr/kamuoyuna-duyuru-902",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:40.232Z"
+    },
+    {
+      "id": "6c95ee11964b9ae6",
+      "title": "Acil 0 Rh (+) Kan İhtiyacı",
+      "link": "https://www.aeo.org.tr/acil-0-rh-kan-ihtiyaci-110",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:40.232Z"
+    },
+    {
+      "id": "6e1e2c3d5b7c31d7",
+      "title": "Oda Aidatları ve Yardımlaşma Sandığı Aidatları Hakkında",
+      "link": "https://www.aeo.org.tr/oda-aidatlari-ve-yardimlasma-sandigi-aidatlari-hakkinda",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:40.232Z"
+    },
+    {
+      "id": "a8699bf6e8e5e2d1",
+      "title": "21.07.2026 |Yardımcı Eczacı Yerleştirmesi ve Çalıştırılmasına Dair Usul ve Esaslar Hakkında TİTCK Duyurusu",
+      "link": "https://www.teb.org.tr/news/11235/Yard%C4%B1mc%C4%B1-Eczac%C4%B1-Yerle%C5%9Ftirmesi-ve-%C3%87al%C4%B1%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1na-Dair-Usul-ve-Esaslar-Hakk%C4%B1nda-T%C4%B0TCK-Duyurusu",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": [
+        {
+          "sourceName": "Düzce Eczacı Odası",
+          "link": "https://www.duzceeo.org/teb-haberleri/11235"
+        },
+        {
+          "sourceName": "Kayseri Eczacı Odası",
+          "link": "http://www.kayserieo.org.tr/teb-haberleri/11235"
+        },
+        {
+          "sourceName": "Hatay Eczacı Odası",
+          "link": "http://www.hatayeo.org.tr/teb-haberleri/11235"
+        },
+        {
+          "sourceName": "Osmaniye Eczacı Odası",
+          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11235"
+        },
+        {
+          "sourceName": "Ordu Eczacı Odası",
+          "link": "http://ordueczaciodasi.org.tr/yardimci-eczaci-yerlestirmesi-ve-calistirilmasina-dair-usul-ve-esaslar-hakkinda-titck-duyurusu/"
+        },
+        {
+          "sourceName": "Ankara Eczacı Odası",
+          "link": "https://www.aeo.org.tr/yardimci-eczaci-yerlestirmesi-ve-calistirilmasina-dair-usul-ve-esaslar-hakkinda-titck-duyurusu"
+        }
+      ]
+    },
+    {
+      "id": "3083f28e7c718c77",
+      "title": "17.07.2026 |Eczacı Yerleştirme Sistemi Başvuruları Hakkında TİTCK Duyurusu",
+      "link": "https://www.teb.org.tr/news/11230/Eczac%C4%B1-Yerle%C5%9Ftirme-Sistemi-Ba%C5%9Fvurular%C4%B1-Hakk%C4%B1nda-T%C4%B0TCK-Duyurusu",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": [
+        {
+          "sourceName": "Düzce Eczacı Odası",
+          "link": "https://www.duzceeo.org/teb-haberleri/11230"
+        },
+        {
+          "sourceName": "Kayseri Eczacı Odası",
+          "link": "http://www.kayserieo.org.tr/teb-haberleri/11230"
+        },
+        {
+          "sourceName": "Hatay Eczacı Odası",
+          "link": "http://www.hatayeo.org.tr/teb-haberleri/11230"
+        },
+        {
+          "sourceName": "Osmaniye Eczacı Odası",
+          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11230"
+        },
+        {
+          "sourceName": "Ankara Eczacı Odası",
+          "link": "https://www.aeo.org.tr/eczaci-yerlestirme-sistemi-basvurulari-hakkinda-titck-duyurusu"
+        }
+      ]
+    },
+    {
+      "id": "4fc44e3e29e38fbe",
+      "title": "14.07.2026 |2026 Yılı Nisan Ayı Sağlık Ödemeleri Hakkında",
+      "link": "https://www.teb.org.tr/news/11226/2026-Y%C4%B1l%C4%B1-Nisan-Ay%C4%B1-Sa%C4%9Fl%C4%B1k-%C3%96demeleri-Hakk%C4%B1nda",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": [
+        {
+          "sourceName": "Ankara Eczacı Odası",
+          "link": "https://www.aeo.org.tr/2026-yili-nisan-ayi-saglik-odemeleri-hakkinda"
+        }
+      ]
+    },
+    {
+      "id": "0cc2051cca35caf1",
+      "title": "21.07.2026 |Ankara Üniversitesi Rektörlüğü Ziyareti",
+      "link": "https://www.teb.org.tr/news/11234/Ankara-%C3%9Cniversitesi-Rekt%C3%B6rl%C3%BC%C4%9F%C3%BC-Ziyareti",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": [
+        {
+          "sourceName": "Düzce Eczacı Odası",
+          "link": "https://www.duzceeo.org/teb-haberleri/11234"
+        },
+        {
+          "sourceName": "Kayseri Eczacı Odası",
+          "link": "http://www.kayserieo.org.tr/teb-haberleri/11234"
+        },
+        {
+          "sourceName": "Hatay Eczacı Odası",
+          "link": "http://www.hatayeo.org.tr/teb-haberleri/11234"
+        },
+        {
+          "sourceName": "Osmaniye Eczacı Odası",
+          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11234"
+        }
+      ]
+    },
+    {
+      "id": "389a2ffa713888cb",
+      "title": "20.07.2026 |Haftalık Sağlık İlaç ve Eczacılık Gündemi",
+      "link": "https://www.teb.org.tr/news/11233/Haftal%C4%B1k-Sa%C4%9Fl%C4%B1k-%C4%B0la%C3%A7-ve-Eczac%C4%B1l%C4%B1k-G%C3%BCndemi",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": [
+        {
+          "sourceName": "Düzce Eczacı Odası",
+          "link": "https://www.duzceeo.org/teb-haberleri/11233"
+        },
+        {
+          "sourceName": "Kayseri Eczacı Odası",
+          "link": "http://www.kayserieo.org.tr/teb-haberleri/11233"
+        },
+        {
+          "sourceName": "Hatay Eczacı Odası",
+          "link": "http://www.hatayeo.org.tr/teb-haberleri/11233"
+        },
+        {
+          "sourceName": "Osmaniye Eczacı Odası",
+          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11233"
+        }
+      ]
+    },
+    {
+      "id": "600cf19d394aad8f",
+      "title": "17.07.2026 |TBMM ile Birliğimiz Arasında Türk Eczacıları Birliği Tarafından İşletilen Provizyon Sisteminin Kullanımına İlişkin Protokol İmzalandı",
+      "link": "https://www.teb.org.tr/news/11231/TBMM-ile-Birli%C4%9Fimiz-Aras%C4%B1nda-T%C3%BCrk-Eczac%C4%B1lar%C4%B1-Birli%C4%9Fi-Taraf%C4%B1ndan-%C4%B0%C5%9Fletilen-Provizyon-Sisteminin-Kullan%C4%B1m%C4%B1na-%C4%B0li%C5%9Fkin-Protokol-%C4%B0mzaland%C4%B1",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "b61e0384d02cb6b5",
+      "title": "17.07.2026 |Eczanelere Yönelik İş Sağlığı ve Güvenliği Rehberi İçin Hazırlık Toplantısı Gerçekleştirildi",
+      "link": "https://www.teb.org.tr/news/11232/Eczanelere-Y%C3%B6nelik-%C4%B0%C5%9F-Sa%C4%9Fl%C4%B1%C4%9F%C4%B1-ve-G%C3%BCvenli%C4%9Fi-Rehberi-%C4%B0%C3%A7in-Haz%C4%B1rl%C4%B1k-Toplant%C4%B1s%C4%B1-Ger%C3%A7ekle%C5%9Ftirildi",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "8c6c254cfec48605",
+      "title": "15.07.2026 |Protokol Komisyonu Toplantısı Hakkında",
+      "link": "https://www.teb.org.tr/news/11229/Protokol-Komisyonu-Toplant%C4%B1s%C4%B1-Hakk%C4%B1nda",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "7cd55f274d27796c",
+      "title": "15.07.2026 |DEMOKRASİMİZİN VE MİLLİ BİRLİĞİMİZİN SAVUNUCUSUYUZ",
+      "link": "https://www.teb.org.tr/news/11228/DEMOKRAS%C4%B0M%C4%B0Z%C4%B0N-VE-M%C4%B0LL%C4%B0-B%C4%B0RL%C4%B0%C4%9E%C4%B0M%C4%B0Z%C4%B0N-SAVUNUCUSUYUZ",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "61dbb690718d6858",
+      "title": "14.07.2026 |Toplumsal Fırsat Eşitliği ve Kadın Hakları Çalışma Grubu Tarafından Yürütülen Kadın Bülteni Hazırlık Çalışmaları",
+      "link": "https://www.teb.org.tr/news/11227/Toplumsal-F%C4%B1rsat-E%C5%9Fitli%C4%9Fi-ve-Kad%C4%B1n-Haklar%C4%B1-%C3%87al%C4%B1%C5%9Fma-Grubu-Taraf%C4%B1ndan-Y%C3%BCr%C3%BCt%C3%BClen-Kad%C4%B1n-B%C3%BClteni-Haz%C4%B1rl%C4%B1k-%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z",
+      "alsoFrom": []
+    },
+    {
+      "id": "8bf50aa8a846d676",
+      "title": "14.07.2026 |Türkiye İlaç ve Tıbbi Cihaz Kurumu Başkanı Sayın Hüseyin Çelik’i Ziyaret",
+      "link": "https://www.teb.org.tr/news/11225/T%C3%BCrkiye-%C4%B0la%C3%A7-ve-T%C4%B1bbi-Cihaz-Kurumu-Ba%C5%9Fkan%C4%B1-Say%C4%B1n-H%C3%BCseyin-%C3%87elik%EF%BF%BD%EF%BF%BDi-Ziyaret",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "357235c3943a5883",
+      "title": "09.07.2026 |Vefat ve Başsağlığı",
+      "link": "https://www.teb.org.tr/news/11223/Vefat-ve-Ba%C5%9Fsa%C4%9Fl%C4%B1%C4%9F%C4%B1",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "7aa58f4a23801988",
+      "title": "07.07.2026 |ŞİDDETE SESSİZ KALMAYACAĞIZ",
+      "link": "https://www.teb.org.tr/news/11221/%C5%9E%C4%B0DDETE-SESS%C4%B0Z-KALMAYACA%C4%9EIZ",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "73a3bb0ddc456280",
+      "title": "07.07.2026 |01.07.2026 - 31.12.2026 Dönemi Oda Aidatları Hakkında",
+      "link": "https://www.teb.org.tr/news/11220/01072026-31122026-D%C3%B6nemi-Oda-Aidatlar%C4%B1-Hakk%C4%B1nda",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "f9d28bb28efc9862",
+      "title": "07.07.2026 |01.07.2026-31.12.2026 Dönemi TEB Yardımlaşma Sandığı Aidatları Hakkında",
+      "link": "https://www.teb.org.tr/news/11219/0107202631122026-D%C3%B6nemi-TEB-Yard%C4%B1mla%C5%9Fma-Sand%C4%B1%C4%9F%C4%B1-Aidatlar%C4%B1-Hakk%C4%B1nda",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "1d6ffe6ec52a8012",
+      "title": "06.07.2026 |T.C. Adalet Bakanlığı Ceza ve Tevkifevleri Genel Müdür Yardımcısı Sayın Enes Kocakale ile Görüşme Gerçekleştirildi",
+      "link": "https://www.teb.org.tr/news/11217/TC-Adalet-Bakanl%C4%B1%C4%9F%C4%B1-Ceza-ve-Tevkifevleri-Genel-M%C3%BCd%C3%BCr-Yard%C4%B1mc%C4%B1s%C4%B1-Say%C4%B1n-Enes-Kocakale-ile-G%C3%B6r%C3%BC%C5%9Fme-Ger%C3%A7ekle%C5%9Ftirildi",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "285236a37ea918d2",
+      "title": "06.07.2026 |Başkent Üniversitesi Eczacılık Fakültesi 2025-2026 Akademik Yılı Mezuniyet Törenine Katılım",
+      "link": "https://www.teb.org.tr/news/11216/Ba%C5%9Fkent-%C3%9Cniversitesi-Eczac%C4%B1l%C4%B1k-Fak%C3%BCltesi-20252026-Akademik-Y%C4%B1l%C4%B1-Mezuniyet-T%C3%B6renine-Kat%C4%B1l%C4%B1m",
+      "publishedAt": null,
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-07-23T10:54:37.354Z"
+    },
+    {
+      "id": "526a7233daf28b5b",
+      "title": "Ambulans Helikopter Kaza Kırımına İlişkin Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-106636/ambulans-helikopter-kaza-kirimina-iliskin-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "4e95d2e870b30012",
+      "title": "Bazı Basın Yayın Organlarında Yayımlanan e-Nabız’ın Katar’a Satıldığını İddia Eden Haberler Hakkında Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-106037/bazi-basin-yayin-organlarinda-yayimlanan-e-nabizin-katara-satildigini-iddia-eden-haberler-hakkinda-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "de69e066a131a841",
+      "title": "27 Bin Sözleşmeli Sağlık Personeli Alımı İçin Kılavuz Yayınlandı",
+      "link": "https://www.saglik.gov.tr/TR-102510/27-bin-sozlesmeli-saglik-personeli-alimi-icin-kilavuz-yayinlandi.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "aca9cc07811ac06d",
+      "title": "Arnavutluk’la Sağlık Alanında Her Türlü İş Birliğine Hazırız",
+      "link": "https://www.saglik.gov.tr/TR-102508/arnavutlukla-saglik-alaninda-her-turlu-is-birligine-haziriz.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "efd22208dc5bc65d",
+      "title": "İzmir Şehir Hastanesi’nde İlk Kemik İliği Nakli Yapıldı",
+      "link": "https://www.saglik.gov.tr/TR-102488/izmir-sehir-hastanesinde-ilk-kemik-iligi-nakli-yapildi.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "d481064c075eaaa1",
+      "title": "Kocaeli Şehir Hastanesi’nde, 10 Ayda 1 Milyon 600 Bin Hastaya Hizmet Verildi",
+      "link": "https://www.saglik.gov.tr/TR-102487/kocaeli-sehir-hastanesinde-10-ayda-1-milyon-600-bin-hastaya-hizmet-verildi.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "c1e482530fd4d848",
+      "title": "2 Yaşındaki Ayşe, Tedavisi İçin Diyarbakır'dan Ankara'ya Getirildi",
+      "link": "https://www.saglik.gov.tr/TR-102446/2-yasindaki-ayse-tedavisi-icin-diyarbakirdan-ankaraya-getirildi.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "07cdd797e71e353b",
+      "title": "Uçak Ambulanslarımız Hayat İçin Harekete Geçmeye Hazır",
+      "link": "https://www.saglik.gov.tr/TR-102442/ucak-ambulanslarimiz-hayat-icin-harekete-gecmeye-hazir.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "4821d8ca120b7576",
+      "title": "Evde Sağlık Birimi Ekipleri Karlı Yolları Aşıp Hasta ve Yaşlılara Ulaşıyor",
+      "link": "https://www.saglik.gov.tr/TR-102428/evde-saglik-birimi-ekipleri-karli-yollari-asip-hasta-ve-yaslilara-ulasiyor.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "e61cca777bb8f0e6",
+      "title": "Bir Suça İki Ceza Verilme Durumu Söz Konusu Değil",
+      "link": "https://www.saglik.gov.tr/TR-102393/bir-suca-iki-ceza-verilme-durumu-soz-konusu-degil.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "1707a1e96a22811c",
+      "title": "Bakan Koca'dan \"Uluslararası Çocukluk Çağı Kanseri Günü\" Paylaşımı",
+      "link": "https://www.saglik.gov.tr/TR-102392/bakan-kocadan-uluslararasi-cocukluk-cagi-kanseri-gunu-paylasimi.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "a62525e469d249da",
+      "title": "Adölesan Taramalarına İlişkin Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-116821/adolesan-taramalarina-iliskin-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "db95ff257670578c",
+      "title": "Diş Hekimliğinde Uzmanlık Eğitimi Giriş Sınavı (DUS) ve Tıpta Yan Dal Uzmanlık Eğitimi Giriş Sınavı (YDUS) Hakkında Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-111576/dis-hekimliginde-uzmanlik-egitimi-giris-sinavi-dus-ve-tipta-yan-dal-uzmanlik-egitimi-giris-sinavi-ydus-hakkinda-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "6e86c4f782d846be",
+      "title": "Sürekli İşçi Alımı Kurasına Yönelik İddialara İlişkin Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-111575/surekli-isci-alimi-kurasina-yonelik-iddialara-iliskin-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
+    },
+    {
+      "id": "36a2bf07d3a93bff",
+      "title": "MHRS'ye İlişkin Kamuoyu Duyurusu",
+      "link": "https://www.saglik.gov.tr/TR-111510/mhrsye-iliskin-kamuoyu-duyurusu.html",
+      "publishedAt": null,
+      "source": "saglik-bakanligi",
+      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
+      "category": "resmi-kurumlar",
+      "fetchedAt": "2026-07-23T10:54:35.118Z"
     },
     {
       "id": "5c9ef7b9d3539510",
@@ -838,477 +1350,6 @@
       "fetchedAt": "2026-07-23T00:17:10.942Z"
     },
     {
-      "id": "3b1a3169bcf2e6ed",
-      "title": "Dünya Sağlık Arenasında Büyüyen Güç",
-      "link": "https://www.eczacininsesi.com/haber/dunya-saglik-arenasinda-buyuyen-guc.html",
-      "publishedAt": null,
-      "source": "eczacinin-sesi",
-      "sourceName": "Eczacının Sesi",
-      "category": "sektor",
-      "fetchedAt": "2026-07-23T00:17:10.942Z"
-    },
-    {
-      "id": "41b93404ca07ae70",
-      "title": "Acil A Rh (+) Trombosit Kan İhtiyacı",
-      "link": "https://www.aeo.org.tr/acil-a-rh-trombosit-kan-ihtiyaci-937",
-      "publishedAt": null,
-      "source": "ankara-eczaci-odasi",
-      "sourceName": "Ankara Eczacı Odası",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:10.038Z"
-    },
-    {
-      "id": "2b2177e4fec73dff",
-      "title": "Odamızdan Adalet Bakanlığı Ceza ve Tevkifevleri Genel Müdürlüğü'ne Ziyaret",
-      "link": "https://www.aeo.org.tr/odamizdan-adalet-bakanligi-ceza-ve-tevkifevleri-genel-mudurlugune-ziyaret",
-      "publishedAt": null,
-      "source": "ankara-eczaci-odasi",
-      "sourceName": "Ankara Eczacı Odası",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:10.038Z"
-    },
-    {
-      "id": "9d7418df54874499",
-      "title": "Kamuoyuna Duyuru",
-      "link": "https://www.aeo.org.tr/kamuoyuna-duyuru-902",
-      "publishedAt": null,
-      "source": "ankara-eczaci-odasi",
-      "sourceName": "Ankara Eczacı Odası",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:10.038Z"
-    },
-    {
-      "id": "6c95ee11964b9ae6",
-      "title": "Acil 0 Rh (+) Kan İhtiyacı",
-      "link": "https://www.aeo.org.tr/acil-0-rh-kan-ihtiyaci-110",
-      "publishedAt": null,
-      "source": "ankara-eczaci-odasi",
-      "sourceName": "Ankara Eczacı Odası",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:10.038Z"
-    },
-    {
-      "id": "6e1e2c3d5b7c31d7",
-      "title": "Oda Aidatları ve Yardımlaşma Sandığı Aidatları Hakkında",
-      "link": "https://www.aeo.org.tr/oda-aidatlari-ve-yardimlasma-sandigi-aidatlari-hakkinda",
-      "publishedAt": null,
-      "source": "ankara-eczaci-odasi",
-      "sourceName": "Ankara Eczacı Odası",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:10.038Z"
-    },
-    {
-      "id": "a8699bf6e8e5e2d1",
-      "title": "21.07.2026 |Yardımcı Eczacı Yerleştirmesi ve Çalıştırılmasına Dair Usul ve Esaslar Hakkında TİTCK Duyurusu",
-      "link": "https://www.teb.org.tr/news/11235/Yard%C4%B1mc%C4%B1-Eczac%C4%B1-Yerle%C5%9Ftirmesi-ve-%C3%87al%C4%B1%C5%9Ft%C4%B1r%C4%B1lmas%C4%B1na-Dair-Usul-ve-Esaslar-Hakk%C4%B1nda-T%C4%B0TCK-Duyurusu",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Düzce Eczacı Odası",
-          "link": "https://www.duzceeo.org/teb-haberleri/11235"
-        },
-        {
-          "sourceName": "Kayseri Eczacı Odası",
-          "link": "http://www.kayserieo.org.tr/teb-haberleri/11235"
-        },
-        {
-          "sourceName": "Hatay Eczacı Odası",
-          "link": "http://www.hatayeo.org.tr/teb-haberleri/11235"
-        },
-        {
-          "sourceName": "Osmaniye Eczacı Odası",
-          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11235"
-        },
-        {
-          "sourceName": "Ordu Eczacı Odası",
-          "link": "http://ordueczaciodasi.org.tr/yardimci-eczaci-yerlestirmesi-ve-calistirilmasina-dair-usul-ve-esaslar-hakkinda-titck-duyurusu/"
-        },
-        {
-          "sourceName": "Ankara Eczacı Odası",
-          "link": "https://www.aeo.org.tr/yardimci-eczaci-yerlestirmesi-ve-calistirilmasina-dair-usul-ve-esaslar-hakkinda-titck-duyurusu"
-        }
-      ]
-    },
-    {
-      "id": "3083f28e7c718c77",
-      "title": "17.07.2026 |Eczacı Yerleştirme Sistemi Başvuruları Hakkında TİTCK Duyurusu",
-      "link": "https://www.teb.org.tr/news/11230/Eczac%C4%B1-Yerle%C5%9Ftirme-Sistemi-Ba%C5%9Fvurular%C4%B1-Hakk%C4%B1nda-T%C4%B0TCK-Duyurusu",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Düzce Eczacı Odası",
-          "link": "https://www.duzceeo.org/teb-haberleri/11230"
-        },
-        {
-          "sourceName": "Kayseri Eczacı Odası",
-          "link": "http://www.kayserieo.org.tr/teb-haberleri/11230"
-        },
-        {
-          "sourceName": "Hatay Eczacı Odası",
-          "link": "http://www.hatayeo.org.tr/teb-haberleri/11230"
-        },
-        {
-          "sourceName": "Osmaniye Eczacı Odası",
-          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11230"
-        },
-        {
-          "sourceName": "Ankara Eczacı Odası",
-          "link": "https://www.aeo.org.tr/eczaci-yerlestirme-sistemi-basvurulari-hakkinda-titck-duyurusu"
-        }
-      ]
-    },
-    {
-      "id": "4fc44e3e29e38fbe",
-      "title": "14.07.2026 |2026 Yılı Nisan Ayı Sağlık Ödemeleri Hakkında",
-      "link": "https://www.teb.org.tr/news/11226/2026-Y%C4%B1l%C4%B1-Nisan-Ay%C4%B1-Sa%C4%9Fl%C4%B1k-%C3%96demeleri-Hakk%C4%B1nda",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Ankara Eczacı Odası",
-          "link": "https://www.aeo.org.tr/2026-yili-nisan-ayi-saglik-odemeleri-hakkinda"
-        }
-      ]
-    },
-    {
-      "id": "0cc2051cca35caf1",
-      "title": "21.07.2026 |Ankara Üniversitesi Rektörlüğü Ziyareti",
-      "link": "https://www.teb.org.tr/news/11234/Ankara-%C3%9Cniversitesi-Rekt%C3%B6rl%C3%BC%C4%9F%C3%BC-Ziyareti",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Düzce Eczacı Odası",
-          "link": "https://www.duzceeo.org/teb-haberleri/11234"
-        },
-        {
-          "sourceName": "Kayseri Eczacı Odası",
-          "link": "http://www.kayserieo.org.tr/teb-haberleri/11234"
-        },
-        {
-          "sourceName": "Hatay Eczacı Odası",
-          "link": "http://www.hatayeo.org.tr/teb-haberleri/11234"
-        },
-        {
-          "sourceName": "Osmaniye Eczacı Odası",
-          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11234"
-        }
-      ]
-    },
-    {
-      "id": "389a2ffa713888cb",
-      "title": "20.07.2026 |Haftalık Sağlık İlaç ve Eczacılık Gündemi",
-      "link": "https://www.teb.org.tr/news/11233/Haftal%C4%B1k-Sa%C4%9Fl%C4%B1k-%C4%B0la%C3%A7-ve-Eczac%C4%B1l%C4%B1k-G%C3%BCndemi",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Düzce Eczacı Odası",
-          "link": "https://www.duzceeo.org/teb-haberleri/11233"
-        },
-        {
-          "sourceName": "Kayseri Eczacı Odası",
-          "link": "http://www.kayserieo.org.tr/teb-haberleri/11233"
-        },
-        {
-          "sourceName": "Hatay Eczacı Odası",
-          "link": "http://www.hatayeo.org.tr/teb-haberleri/11233"
-        },
-        {
-          "sourceName": "Osmaniye Eczacı Odası",
-          "link": "http://www.osmaniyeeczaciodasi.org.tr/teb-haberleri/11233"
-        }
-      ]
-    },
-    {
-      "id": "600cf19d394aad8f",
-      "title": "17.07.2026 |TBMM ile Birliğimiz Arasında Türk Eczacıları Birliği Tarafından İşletilen Provizyon Sisteminin Kullanımına İlişkin Protokol İmzalandı",
-      "link": "https://www.teb.org.tr/news/11231/TBMM-ile-Birli%C4%9Fimiz-Aras%C4%B1nda-T%C3%BCrk-Eczac%C4%B1lar%C4%B1-Birli%C4%9Fi-Taraf%C4%B1ndan-%C4%B0%C5%9Fletilen-Provizyon-Sisteminin-Kullan%C4%B1m%C4%B1na-%C4%B0li%C5%9Fkin-Protokol-%C4%B0mzaland%C4%B1",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "b61e0384d02cb6b5",
-      "title": "17.07.2026 |Eczanelere Yönelik İş Sağlığı ve Güvenliği Rehberi İçin Hazırlık Toplantısı Gerçekleştirildi",
-      "link": "https://www.teb.org.tr/news/11232/Eczanelere-Y%C3%B6nelik-%C4%B0%C5%9F-Sa%C4%9Fl%C4%B1%C4%9F%C4%B1-ve-G%C3%BCvenli%C4%9Fi-Rehberi-%C4%B0%C3%A7in-Haz%C4%B1rl%C4%B1k-Toplant%C4%B1s%C4%B1-Ger%C3%A7ekle%C5%9Ftirildi",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "8c6c254cfec48605",
-      "title": "15.07.2026 |Protokol Komisyonu Toplantısı Hakkında",
-      "link": "https://www.teb.org.tr/news/11229/Protokol-Komisyonu-Toplant%C4%B1s%C4%B1-Hakk%C4%B1nda",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "7cd55f274d27796c",
-      "title": "15.07.2026 |DEMOKRASİMİZİN VE MİLLİ BİRLİĞİMİZİN SAVUNUCUSUYUZ",
-      "link": "https://www.teb.org.tr/news/11228/DEMOKRAS%C4%B0M%C4%B0Z%C4%B0N-VE-M%C4%B0LL%C4%B0-B%C4%B0RL%C4%B0%C4%9E%C4%B0M%C4%B0Z%C4%B0N-SAVUNUCUSUYUZ",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "61dbb690718d6858",
-      "title": "14.07.2026 |Toplumsal Fırsat Eşitliği ve Kadın Hakları Çalışma Grubu Tarafından Yürütülen Kadın Bülteni Hazırlık Çalışmaları",
-      "link": "https://www.teb.org.tr/news/11227/Toplumsal-F%C4%B1rsat-E%C5%9Fitli%C4%9Fi-ve-Kad%C4%B1n-Haklar%C4%B1-%C3%87al%C4%B1%C5%9Fma-Grubu-Taraf%C4%B1ndan-Y%C3%BCr%C3%BCt%C3%BClen-Kad%C4%B1n-B%C3%BClteni-Haz%C4%B1rl%C4%B1k-%C3%87al%C4%B1%C5%9Fmalar%C4%B1",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z",
-      "alsoFrom": []
-    },
-    {
-      "id": "8bf50aa8a846d676",
-      "title": "14.07.2026 |Türkiye İlaç ve Tıbbi Cihaz Kurumu Başkanı Sayın Hüseyin Çelik’i Ziyaret",
-      "link": "https://www.teb.org.tr/news/11225/T%C3%BCrkiye-%C4%B0la%C3%A7-ve-T%C4%B1bbi-Cihaz-Kurumu-Ba%C5%9Fkan%C4%B1-Say%C4%B1n-H%C3%BCseyin-%C3%87elik%EF%BF%BD%EF%BF%BDi-Ziyaret",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "357235c3943a5883",
-      "title": "09.07.2026 |Vefat ve Başsağlığı",
-      "link": "https://www.teb.org.tr/news/11223/Vefat-ve-Ba%C5%9Fsa%C4%9Fl%C4%B1%C4%9F%C4%B1",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "7aa58f4a23801988",
-      "title": "07.07.2026 |ŞİDDETE SESSİZ KALMAYACAĞIZ",
-      "link": "https://www.teb.org.tr/news/11221/%C5%9E%C4%B0DDETE-SESS%C4%B0Z-KALMAYACA%C4%9EIZ",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "73a3bb0ddc456280",
-      "title": "07.07.2026 |01.07.2026 - 31.12.2026 Dönemi Oda Aidatları Hakkında",
-      "link": "https://www.teb.org.tr/news/11220/01072026-31122026-D%C3%B6nemi-Oda-Aidatlar%C4%B1-Hakk%C4%B1nda",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "f9d28bb28efc9862",
-      "title": "07.07.2026 |01.07.2026-31.12.2026 Dönemi TEB Yardımlaşma Sandığı Aidatları Hakkında",
-      "link": "https://www.teb.org.tr/news/11219/0107202631122026-D%C3%B6nemi-TEB-Yard%C4%B1mla%C5%9Fma-Sand%C4%B1%C4%9F%C4%B1-Aidatlar%C4%B1-Hakk%C4%B1nda",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "1d6ffe6ec52a8012",
-      "title": "06.07.2026 |T.C. Adalet Bakanlığı Ceza ve Tevkifevleri Genel Müdür Yardımcısı Sayın Enes Kocakale ile Görüşme Gerçekleştirildi",
-      "link": "https://www.teb.org.tr/news/11217/TC-Adalet-Bakanl%C4%B1%C4%9F%C4%B1-Ceza-ve-Tevkifevleri-Genel-M%C3%BCd%C3%BCr-Yard%C4%B1mc%C4%B1s%C4%B1-Say%C4%B1n-Enes-Kocakale-ile-G%C3%B6r%C3%BC%C5%9Fme-Ger%C3%A7ekle%C5%9Ftirildi",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "285236a37ea918d2",
-      "title": "06.07.2026 |Başkent Üniversitesi Eczacılık Fakültesi 2025-2026 Akademik Yılı Mezuniyet Törenine Katılım",
-      "link": "https://www.teb.org.tr/news/11216/Ba%C5%9Fkent-%C3%9Cniversitesi-Eczac%C4%B1l%C4%B1k-Fak%C3%BCltesi-20252026-Akademik-Y%C4%B1l%C4%B1-Mezuniyet-T%C3%B6renine-Kat%C4%B1l%C4%B1m",
-      "publishedAt": null,
-      "source": "teb",
-      "sourceName": "Türk Eczacıları Birliği",
-      "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:08.009Z"
-    },
-    {
-      "id": "526a7233daf28b5b",
-      "title": "Ambulans Helikopter Kaza Kırımına İlişkin Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-106636/ambulans-helikopter-kaza-kirimina-iliskin-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "4e95d2e870b30012",
-      "title": "Bazı Basın Yayın Organlarında Yayımlanan e-Nabız’ın Katar’a Satıldığını İddia Eden Haberler Hakkında Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-106037/bazi-basin-yayin-organlarinda-yayimlanan-e-nabizin-katara-satildigini-iddia-eden-haberler-hakkinda-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "de69e066a131a841",
-      "title": "27 Bin Sözleşmeli Sağlık Personeli Alımı İçin Kılavuz Yayınlandı",
-      "link": "https://www.saglik.gov.tr/TR-102510/27-bin-sozlesmeli-saglik-personeli-alimi-icin-kilavuz-yayinlandi.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "aca9cc07811ac06d",
-      "title": "Arnavutluk’la Sağlık Alanında Her Türlü İş Birliğine Hazırız",
-      "link": "https://www.saglik.gov.tr/TR-102508/arnavutlukla-saglik-alaninda-her-turlu-is-birligine-haziriz.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "efd22208dc5bc65d",
-      "title": "İzmir Şehir Hastanesi’nde İlk Kemik İliği Nakli Yapıldı",
-      "link": "https://www.saglik.gov.tr/TR-102488/izmir-sehir-hastanesinde-ilk-kemik-iligi-nakli-yapildi.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "d481064c075eaaa1",
-      "title": "Kocaeli Şehir Hastanesi’nde, 10 Ayda 1 Milyon 600 Bin Hastaya Hizmet Verildi",
-      "link": "https://www.saglik.gov.tr/TR-102487/kocaeli-sehir-hastanesinde-10-ayda-1-milyon-600-bin-hastaya-hizmet-verildi.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "c1e482530fd4d848",
-      "title": "2 Yaşındaki Ayşe, Tedavisi İçin Diyarbakır'dan Ankara'ya Getirildi",
-      "link": "https://www.saglik.gov.tr/TR-102446/2-yasindaki-ayse-tedavisi-icin-diyarbakirdan-ankaraya-getirildi.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "07cdd797e71e353b",
-      "title": "Uçak Ambulanslarımız Hayat İçin Harekete Geçmeye Hazır",
-      "link": "https://www.saglik.gov.tr/TR-102442/ucak-ambulanslarimiz-hayat-icin-harekete-gecmeye-hazir.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "4821d8ca120b7576",
-      "title": "Evde Sağlık Birimi Ekipleri Karlı Yolları Aşıp Hasta ve Yaşlılara Ulaşıyor",
-      "link": "https://www.saglik.gov.tr/TR-102428/evde-saglik-birimi-ekipleri-karli-yollari-asip-hasta-ve-yaslilara-ulasiyor.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "e61cca777bb8f0e6",
-      "title": "Bir Suça İki Ceza Verilme Durumu Söz Konusu Değil",
-      "link": "https://www.saglik.gov.tr/TR-102393/bir-suca-iki-ceza-verilme-durumu-soz-konusu-degil.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "1707a1e96a22811c",
-      "title": "Bakan Koca'dan \"Uluslararası Çocukluk Çağı Kanseri Günü\" Paylaşımı",
-      "link": "https://www.saglik.gov.tr/TR-102392/bakan-kocadan-uluslararasi-cocukluk-cagi-kanseri-gunu-paylasimi.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.135Z"
-    },
-    {
-      "id": "a62525e469d249da",
-      "title": "Adölesan Taramalarına İlişkin Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-116821/adolesan-taramalarina-iliskin-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.134Z"
-    },
-    {
-      "id": "db95ff257670578c",
-      "title": "Diş Hekimliğinde Uzmanlık Eğitimi Giriş Sınavı (DUS) ve Tıpta Yan Dal Uzmanlık Eğitimi Giriş Sınavı (YDUS) Hakkında Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-111576/dis-hekimliginde-uzmanlik-egitimi-giris-sinavi-dus-ve-tipta-yan-dal-uzmanlik-egitimi-giris-sinavi-ydus-hakkinda-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.134Z"
-    },
-    {
-      "id": "6e86c4f782d846be",
-      "title": "Sürekli İşçi Alımı Kurasına Yönelik İddialara İlişkin Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-111575/surekli-isci-alimi-kurasina-yonelik-iddialara-iliskin-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.134Z"
-    },
-    {
-      "id": "36a2bf07d3a93bff",
-      "title": "MHRS'ye İlişkin Kamuoyu Duyurusu",
-      "link": "https://www.saglik.gov.tr/TR-111510/mhrsye-iliskin-kamuoyu-duyurusu.html",
-      "publishedAt": null,
-      "source": "saglik-bakanligi",
-      "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
-      "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:17:06.134Z"
-    },
-    {
       "id": "46f88e75a6e53b27",
       "title": "Canberk Eczanesi Sahibi ve Mesul Müdürü Ecz. Hatice Kübra KÖSEOĞLU’nun Eşi Dr. Fatih KÖSEOĞLU Vefat Etmiştir",
       "link": "https://www.aeo.org.tr/canberk-eczanesi-sahibi-ve-mesul-muduru-ecz-hatice-kubra-koseoglunun-esi-dr-fatih-koseoglu-vefat-etmistir",
@@ -1346,7 +1387,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "e3da7cb9841f496e",
@@ -1356,7 +1397,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "cbbf2f235bc27003",
@@ -1366,7 +1407,7 @@
       "source": "titck-duyuru",
       "sourceName": "TİTCK - Duyurular",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:16:57.294Z",
+      "fetchedAt": "2026-07-23T10:54:25.433Z",
       "alsoFrom": []
     },
     {
@@ -1377,7 +1418,7 @@
       "source": "titck-duyuru",
       "sourceName": "TİTCK - Duyurular",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:16:57.294Z"
+      "fetchedAt": "2026-07-23T10:54:25.433Z"
     },
     {
       "id": "76a76e285e8941ad",
@@ -1387,7 +1428,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "b68541c86615fa1d",
@@ -1397,7 +1438,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "caf2198559826273",
@@ -1407,7 +1448,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "a182b6ddce10fdc4",
@@ -1417,7 +1458,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "430a5c6617ea8eea",
@@ -1427,7 +1468,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "fa8eeb83a3588136",
@@ -1437,7 +1478,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Kayseri Eczacı Odası",
@@ -1461,7 +1502,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Kayseri Eczacı Odası",
@@ -1485,7 +1526,7 @@
       "source": "titck-duyuru",
       "sourceName": "TİTCK - Duyurular",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-07-23T00:16:57.294Z"
+      "fetchedAt": "2026-07-23T10:54:25.433Z"
     },
     {
       "id": "af563d271a4e9042",
@@ -1495,7 +1536,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "8c3bfd86c71b36b2",
@@ -1505,7 +1546,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "8cb8f146e8113951",
@@ -1515,7 +1556,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "cf6b2788df9d936e",
@@ -1525,7 +1566,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "ccd898fb309138f2",
@@ -1535,7 +1576,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "269b363a31a49898",
@@ -1545,7 +1586,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1565,7 +1606,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1585,7 +1626,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Kayseri Eczacı Odası",
@@ -1609,7 +1650,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1629,7 +1670,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1649,7 +1690,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "09c0f38e5d686553",
@@ -1659,7 +1700,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "3613b2d6dcef7613",
@@ -1669,7 +1710,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z",
+      "fetchedAt": "2026-07-23T10:55:44.935Z",
       "alsoFrom": []
     },
     {
@@ -1680,7 +1721,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1700,7 +1741,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "6071cc5be31a9aec",
@@ -1710,7 +1751,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "305c554e567ccd56",
@@ -1720,7 +1761,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "9241a0f0e2bf1f91",
@@ -1730,7 +1771,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z",
+      "fetchedAt": "2026-07-23T10:55:44.935Z",
       "alsoFrom": []
     },
     {
@@ -1741,7 +1782,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "19a3141e560a2b6f",
@@ -1771,7 +1812,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "f1b085f078bc95fc",
@@ -1781,7 +1822,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "381ecf963e48ec7d",
@@ -1791,7 +1832,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "7042d2662e0572d5",
@@ -1801,7 +1842,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "97a237a5fa78d2af",
@@ -1811,7 +1852,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "be70fa99f70ce6db",
@@ -1821,7 +1862,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1841,7 +1882,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z",
+      "fetchedAt": "2026-07-23T10:54:38.972Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1861,7 +1902,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "f2e31074b929c5ab",
@@ -1871,7 +1912,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z"
+      "fetchedAt": "2026-07-23T10:55:44.935Z"
     },
     {
       "id": "d6dc7d9f84c17890",
@@ -1881,7 +1922,7 @@
       "source": "kayseri-eczaci-odasi",
       "sourceName": "Kayseri Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:17:59.228Z",
+      "fetchedAt": "2026-07-23T10:55:44.935Z",
       "alsoFrom": [
         {
           "sourceName": "Hatay Eczacı Odası",
@@ -1907,7 +1948,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "a121e40ce04ed78d",
@@ -1917,7 +1958,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "13d41b4db77e93d1",
@@ -1927,7 +1968,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "75bf860ed0720b4f",
@@ -1937,7 +1978,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "659863f682132e6c",
@@ -1947,7 +1988,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "e6472431f66734fd",
@@ -1957,7 +1998,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "1bf8ce6ed56a4c83",
@@ -1967,7 +2008,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "cb43ca22359024ff",
@@ -1977,7 +2018,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "1137a02b364a256e",
@@ -1987,7 +2028,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "a8bdec1c3de930e3",
@@ -1997,7 +2038,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "437c87da96b326d3",
@@ -2007,7 +2048,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:32:21.190Z"
+      "fetchedAt": "2026-07-23T11:07:12.588Z"
     },
     {
       "id": "d8c0d18de903919f",
@@ -2017,7 +2058,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "ca2e4fdc01b978f3",
@@ -2027,7 +2068,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "bcec8209e47c786e",
@@ -2037,7 +2078,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "4e3ab20777aef615",
@@ -2047,7 +2088,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "5a0cab9b3d476092",
@@ -2057,7 +2098,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "be7844fc136229c9",
@@ -2067,7 +2108,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "fefc7d379ebad25d",
@@ -2077,7 +2118,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "332bebc9d4179f31",
@@ -2087,7 +2128,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "f0f27a87a28cfc28",
@@ -2097,7 +2138,7 @@
       "source": "hatay-eczaci-odasi",
       "sourceName": "Hatay Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:35:46.533Z"
+      "fetchedAt": "2026-07-23T11:10:38.775Z"
     },
     {
       "id": "f07c2b44c2af0fa7",
@@ -2107,7 +2148,7 @@
       "source": "titck-geri-cekme",
       "sourceName": "TİTCK - Geri Çekme / Satış Yasağı",
       "category": "geri-cekme",
-      "fetchedAt": "2026-07-23T00:17:04.290Z"
+      "fetchedAt": "2026-07-23T10:54:32.545Z"
     },
     {
       "id": "2cea5befd2ff0204",
@@ -2117,7 +2158,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "c61afd21abf3d866",
@@ -2127,7 +2168,7 @@
       "source": "titck-geri-cekme",
       "sourceName": "TİTCK - Geri Çekme / Satış Yasağı",
       "category": "geri-cekme",
-      "fetchedAt": "2026-07-23T00:17:04.290Z"
+      "fetchedAt": "2026-07-23T10:54:32.545Z"
     },
     {
       "id": "c54423a41c6b9bf3",
@@ -2137,7 +2178,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "7f9b01699dd6129f",
@@ -2147,7 +2188,7 @@
       "source": "titck-geri-cekme",
       "sourceName": "TİTCK - Geri Çekme / Satış Yasağı",
       "category": "geri-cekme",
-      "fetchedAt": "2026-07-23T00:17:04.290Z",
+      "fetchedAt": "2026-07-23T10:54:32.545Z",
       "alsoFrom": []
     },
     {
@@ -2158,7 +2199,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "ecc32ee860121f07",
@@ -2168,7 +2209,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "1ea28dfaf8bddf8a",
@@ -2178,7 +2219,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "9d322d18af72ebe3",
@@ -2188,7 +2229,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "68ca74facdf6e69d",
@@ -2198,7 +2239,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "c6974eeca4667c53",
@@ -2208,7 +2249,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "a3c9b5e602ebdf38",
@@ -2218,7 +2259,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "857ec1c1288b6078",
@@ -2228,7 +2269,7 @@
       "source": "titck-geri-cekme",
       "sourceName": "TİTCK - Geri Çekme / Satış Yasağı",
       "category": "geri-cekme",
-      "fetchedAt": "2026-07-23T00:17:04.290Z"
+      "fetchedAt": "2026-07-23T10:54:32.545Z"
     },
     {
       "id": "ccc0217b81824c5b",
@@ -2238,7 +2279,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "8a2ba025a922a2fd",
@@ -2248,7 +2289,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "5e7798ee4e976e48",
@@ -2258,7 +2299,7 @@
       "source": "osmaniye-eczaci-odasi",
       "sourceName": "Osmaniye Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-07-23T00:59:42.299Z"
+      "fetchedAt": "2026-07-23T11:34:41.060Z"
     },
     {
       "id": "6985bd5880a5c1b4",
@@ -2268,7 +2309,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "d406c2a88069aa68",
@@ -2278,7 +2319,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "00bb95d03db07d32",
@@ -2288,7 +2329,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "87d500718d204fe2",
@@ -2298,7 +2339,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "cc732c7e55ec2c47",
@@ -2308,7 +2349,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "5a69acc38a923f46",
@@ -2318,7 +2359,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "7c859a762a766316",
@@ -2328,7 +2369,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "dad8b0074fee9bdd",
@@ -2338,7 +2379,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "49928e653a10a543",
@@ -2348,7 +2389,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "5e438a408ecd7872",
@@ -2358,7 +2399,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     },
     {
       "id": "920ea5e036eefe06",
@@ -2368,7 +2409,7 @@
       "source": "duzce-eczaci-odasi",
       "sourceName": "Düzce Eczacı Odası",
       "category": "duzce",
-      "fetchedAt": "2026-07-23T00:17:09.412Z"
+      "fetchedAt": "2026-07-23T10:54:38.972Z"
     }
   ]
 }
