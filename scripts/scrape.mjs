@@ -63,7 +63,7 @@ function normalizeTitle(title) {
 }
 
 function itemTimeMs(item) {
-  return Date.parse(item.publishedAt || item.fetchedAt || 0);
+  return Date.parse(item.publishedAt || item.firstSeenAt || item.fetchedAt || 0);
 }
 
 // Aynı haberin farklı kaynaklarca (ör. TEB duyurusunu bir eczacı odasının
@@ -384,15 +384,28 @@ async function main() {
     console.log(`[${result.status.toUpperCase()}] ${source.name}: ${result.itemCount} öğe${suffix}`);
   }
 
+  // Her habere, ilk keşfedildiği anı (firstSeenAt) KALICI olarak yazıyoruz.
+  // Yeniden görülen haberde bu değer korunur; yalnızca yeni bulunanlar "şimdi"
+  // damgası alır. Sıralama buna göre yapıldığından yeni haberler listenin
+  // tepesine çıkar (tarihi olmayan kaynaklarda fetchedAt her tarama değiştiği
+  // için sıralama donuyordu; firstSeenAt bunu çözer).
+  const prevById = new Map((previous.items || []).map((it) => [it.id, it]));
   const merged = new Map();
   for (const it of previous.items || []) merged.set(it.id, { ...it, alsoFrom: undefined });
-  for (const it of freshItems) merged.set(it.id, it);
+  for (const it of freshItems) {
+    const prev = prevById.get(it.id);
+    const firstSeenAt = (prev && prev.firstSeenAt) || it.fetchedAt;
+    merged.set(it.id, { ...it, firstSeenAt });
+  }
+  for (const it of merged.values()) {
+    if (!it.firstSeenAt) it.firstSeenAt = it.fetchedAt || it.publishedAt || null;
+  }
 
   const sourcePriority = new Map(sources.map((s) => [s.id, s.priority ?? 99]));
   let allItems = dedupeItems(Array.from(merged.values()), sourcePriority);
   allItems.sort((a, b) => {
-    const da = Date.parse(a.publishedAt || a.fetchedAt || 0);
-    const db = Date.parse(b.publishedAt || b.fetchedAt || 0);
+    const da = Date.parse(a.publishedAt || a.firstSeenAt || a.fetchedAt || 0);
+    const db = Date.parse(b.publishedAt || b.firstSeenAt || b.fetchedAt || 0);
     return db - da;
   });
   allItems = allItems.slice(0, MAX_TOTAL_ITEMS);
