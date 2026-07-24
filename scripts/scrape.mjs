@@ -353,7 +353,9 @@ async function scrapeSource(source) {
     return { result, items: normalized };
   } catch (err) {
     result.status = 'error';
-    result.error = err && err.message ? err.message : String(err);
+    const baseMsg = err && err.message ? err.message : String(err);
+    const causeMsg = err && err.cause && err.cause.message;
+    result.error = causeMsg ? `${baseMsg}: ${causeMsg}` : baseMsg;
     return { result, items: [] };
   }
 }
