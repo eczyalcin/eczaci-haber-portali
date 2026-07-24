@@ -59,9 +59,13 @@
   async function load() {
     contentEl.innerHTML = '<div class="loading-state">Yükleniyor…</div>';
     try {
+      // GitHub Pages'in CDN katmanı (Fastly) "cache: no-store" isteğine
+      // rağmen eski bir kopyayı sunabiliyor; her seferinde benzersiz bir
+      // sorgu parametresiyle isteği zorunlu cache-miss yapıyoruz.
+      var cacheBuster = 'v=' + Date.now();
       var [newsRes, catRes] = await Promise.all([
-        fetch(DATA_URL, { cache: 'no-store' }),
-        fetch(CATEGORIES_URL, { cache: 'no-store' }),
+        fetch(DATA_URL + '?' + cacheBuster, { cache: 'no-store' }),
+        fetch(CATEGORIES_URL + '?' + cacheBuster, { cache: 'no-store' }),
       ]);
       var news = await newsRes.json();
       var categories = await catRes.json();
