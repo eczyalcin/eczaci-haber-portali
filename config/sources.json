@@ -58,15 +58,12 @@
     "type": "html",
     "listUrl": "https://www.teb.org.tr/news",
     "selectors": {
-      "item": ".haberListe_M .whiteContent",
-      "link": ".col_R-17 a",
-      "title": "h1"
+      "item": "a.news-card",
+      "title": ".news-card__title",
+      "date": "time"
     },
     "verified": true,
-    "notes": "22.07.2026 tanılamasında doğrulandı. Başlık, sitedeki biçimle aynı şekilde '21.07.2026 |Başlık' formatında gelir (tarih başlığın içinde).",
-    "diagnoseUrls": [
-      "https://www.teb.org.tr/content/28/Eczac%C4%B1-Odalar%C4%B1-Listesi"
-    ]
+    "notes": "25.07.2026'da güncellendi: TEB sitesini yeniledi (Vue tabanlı yeni tasarım), eski .haberListe_M/.whiteContent seçicileri geçersiz kaldı. Yeni yapı a.news-card / .news-card__title / time; artık gerçek yayın tarihi de ayrıştırılıyor. Gerçek HTML'e karşı test edildi (12 haber)."
   },
   {
     "id": "duzce-eczaci-odasi",
