@@ -525,7 +525,7 @@
     "priority": 4,
     "type": "auto-template",
     "verified": false,
-    "notes": "TEB oda listesinden alındı (42. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+    "notes": "Site içeriği JavaScript ile yükleniyor (sunucudan gelen HTML yalnızca ~4KB boş kabuk), bu yüzden statik tarama ile haber alınamıyor. Tarayıcı tabanlı tarama gerektirir."
   },
   {
     "id": "mardin-eczaci-odasi",
@@ -605,7 +605,7 @@
     "priority": 4,
     "type": "auto-template",
     "verified": false,
-    "notes": "TEB oda listesinden alındı (50. Bölge). RSS/şablon otomatik denenecek; eşleşmezse elle yapılandırma gerekir."
+    "notes": "Tanılamada sunucu boş yanıt döndürdü (0 bayt). Site erişilebilir olduğunda yeniden denenmeli."
   },
   {
     "id": "adiyaman-eczaci-odasi",

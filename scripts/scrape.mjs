@@ -135,6 +135,29 @@ async function fetchWithTimeout(url, opts = {}) {
   }
 }
 
+// Bazı eczacı odası siteleri hâlâ windows-1254 / ISO-8859-9 ile yayın
+// yapıyor. res.text() her zaman UTF-8 varsaydığından Türkçe karakterler
+// bozuluyordu ("SÖKE" -> "S�KE"). Charset'i HTTP başlığından ya da
+// sayfadaki <meta charset> etiketinden okuyup ona göre çözüyoruz.
+async function readHtml(res) {
+  const buf = Buffer.from(await res.arrayBuffer());
+  const headerType = res.headers.get('content-type') || '';
+  let charset = (headerType.match(/charset=([\w-]+)/i) || [])[1];
+  if (!charset) {
+    const head = buf.subarray(0, 2048).toString('latin1');
+    charset =
+      (head.match(/<meta[^>]+charset=["']?\s*([\w-]+)/i) || [])[1] ||
+      (head.match(/content=["'][^"']*charset=([\w-]+)/i) || [])[1];
+  }
+  const cs = (charset || 'utf-8').toLowerCase();
+  const normalized = cs === 'iso-8859-9' || cs === 'windows-1254' ? 'windows-1254' : cs;
+  try {
+    return new TextDecoder(normalized).decode(buf);
+  } catch {
+    return buf.toString('utf-8');
+  }
+}
+
 function parseTurkishDate(text) {
   if (!text) return null;
   const t = text.trim().toLowerCase();
@@ -163,7 +186,7 @@ async function discoverFeedUrl(homepage) {
   try {
     const res = await fetchWithTimeout(homepage);
     if (res.ok) {
-      const html = await res.text();
+      const html = await readHtml(res);
       const $ = cheerio.load(html);
       const href = $('link[type="application/rss+xml"], link[type="application/atom+xml"]')
         .first()
@@ -243,7 +266,7 @@ function extractListItems(html, listUrl, selectors) {
 async function scrapeHtmlList(source) {
   const res = await fetchWithTimeout(source.listUrl);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
+  const html = await readHtml(res);
   return extractListItems(html, source.listUrl, source.selectors);
 }
 
@@ -262,10 +285,124 @@ const TEMPLATE_LIBRARY = [
   },
 ];
 
+// 59 eczacı odasının siteleri birbirinden çok farklı (her birine elle CSS
+// seçicisi yazmak ölçeklenmiyor). Bu algoritma sayfadaki bağlantıları
+// yapısal "imzalarına" (kendi + 2 üst elemanın etiket/sınıf zinciri) göre
+// gruplayıp haber listesini otomatik buluyor. Menüden ayırt etmenin en
+// güçlü işareti öğenin yanında bir tarih bulunması; puanlama bunu ödüllendirir.
+const TR_MONTH_PATTERN =
+  'ocak|şubat|subat|mart|nisan|mayıs|mayis|haziran|temmuz|ağustos|agustos|eylül|eylul|ekim|kasım|kasim|aralık|aralik';
+const NEARBY_DATE_RE = new RegExp(
+  `(\\d{1,2}[./]\\d{1,2}[./]\\d{4})|(\\d{1,2}\\s+(${TR_MONTH_PATTERN})\\s+\\d{4})`,
+  'i'
+);
+const NAV_HINT_RE = /(^|\s|-)(nav|menu|menü|navbar|footer|header|breadcrumb)(\s|$|-)/i;
+const SKIP_TITLE_RE = /^(tümü|tumu|devamı|devami|devamını oku|daha fazla|hepsi|duyurular|haberler|ana sayfa)$/i;
+
+function structuralSignature($, el) {
+  let node = $(el);
+  const parts = [];
+  for (let depth = 0; depth < 3; depth += 1) {
+    const raw = node.get(0);
+    if (!raw || !raw.tagName) break;
+    const cls = (node.attr('class') || '').trim().split(/\s+/).filter(Boolean).sort().slice(0, 4).join('.');
+    parts.push(cls ? `${raw.tagName}.${cls}` : raw.tagName);
+    node = node.parent();
+  }
+  return parts.join('>');
+}
+
+function linkTitle($, a) {
+  const text = ($(a).text() || '').replace(/\s+/g, ' ').trim();
+  if (text.length >= 10) return text;
+  const attr = ($(a).attr('title') || '').trim();
+  if (attr.length >= 10) return attr;
+  const alt = ($(a).find('img').first().attr('alt') || '').trim();
+  return alt || attr || text;
+}
+
+function nearbyText($, a) {
+  let node = $(a);
+  for (let depth = 0; depth < 3; depth += 1) {
+    const parent = node.parent();
+    if (!parent.get(0)) break;
+    node = parent;
+  }
+  return (node.text() || '').replace(/\s+/g, ' ').slice(0, 400);
+}
+
+function insideNavigation($, a) {
+  let node = $(a);
+  for (let depth = 0; depth < 4; depth += 1) {
+    const raw = node.get(0);
+    if (!raw) break;
+    if (raw.tagName === 'nav' || raw.tagName === 'footer' || raw.tagName === 'header') return true;
+    if (NAV_HINT_RE.test(node.attr('class') || '') || NAV_HINT_RE.test(node.attr('id') || '')) return true;
+    node = node.parent();
+  }
+  return false;
+}
+
+function autoDetectItems(html, baseUrl) {
+  const $ = cheerio.load(html);
+  const groups = new Map();
+
+  $('a[href]').each((_, a) => {
+    const href = $(a).attr('href') || '';
+    if (!href || href.startsWith('#') || /^(mailto:|tel:|javascript:)/i.test(href)) return;
+    if (/\.(css|js|png|jpe?g|gif|svg|ico|woff2?|pdf)($|\?)/i.test(href)) return;
+
+    let link;
+    try {
+      link = new URL(href, baseUrl).toString();
+    } catch {
+      return;
+    }
+
+    const title = linkTitle($, a);
+    if (title.length < 15 || SKIP_TITLE_RE.test(title)) return;
+    if (insideNavigation($, a)) return;
+
+    const around = nearbyText($, a);
+    const dateMatch = around.match(NEARBY_DATE_RE);
+    const sig = structuralSignature($, a);
+    if (!groups.has(sig)) groups.set(sig, []);
+    groups.get(sig).push({
+      title,
+      link,
+      publishedAt: dateMatch ? parseTurkishDate(dateMatch[0]) : null,
+      hasDate: Boolean(dateMatch),
+    });
+  });
+
+  let best = [];
+  let bestScore = 0;
+  for (const items of groups.values()) {
+    const seen = new Set();
+    const unique = [];
+    for (const it of items) {
+      if (seen.has(it.link)) continue;
+      seen.add(it.link);
+      unique.push(it);
+    }
+    if (unique.length < 3) continue;
+
+    const dateFraction = unique.filter((i) => i.hasDate).length / unique.length;
+    const avgTitleLength = unique.reduce((sum, i) => sum + i.title.length, 0) / unique.length;
+    const score = unique.length * (1 + 4 * dateFraction) * (avgTitleLength >= 25 ? 1.3 : 1);
+    if (score > bestScore) {
+      bestScore = score;
+      best = unique;
+    }
+  }
+
+  return best.map(({ title, link, publishedAt }) => ({ title, link, publishedAt }));
+}
+
 async function scrapeAutoTemplate(source) {
   const res = await fetchWithTimeout(source.homepage);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
+  const html = await readHtml(res);
 
   for (const tpl of TEMPLATE_LIBRARY) {
     let items = [];
@@ -277,6 +414,12 @@ async function scrapeAutoTemplate(source) {
     if (items.length >= 2) {
       return { items, matchedTemplate: tpl.name };
     }
+  }
+
+  // Bilinen şablonlardan hiçbiri tutmazsa yapısal otomatik keşfe düş.
+  const detected = autoDetectItems(html, source.homepage);
+  if (detected.length >= 3) {
+    return { items: detected, matchedTemplate: 'oto-keşif' };
   }
 
   return { items: [], matchedTemplate: null };

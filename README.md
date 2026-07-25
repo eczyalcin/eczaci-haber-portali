@@ -51,15 +51,22 @@ statik haber portalı.
 - `type: "auto"` → önce RSS otomatik keşfi dener. Deneyin ama çoğu Türkiye
   kurum/kuruluş sitesinde RSS otomatik keşfi (standart `<link rel="alternate">`
   etiketi) bulunmuyor; bu durumda kaynak "yapılandırma bekliyor" olarak kalır.
-- `type: "auto-template"` → RSS keşfini dener, olmazsa `scripts/scrape.mjs`
-  içindeki `TEMPLATE_LIBRARY`'deki bilinen site şablonlarını (ör.
-  "duzce-tarzi", "aeo-tarzi") sırayla dener; biri ≥2 anlamlı öğe üretirse
-  otomatik olarak o şablonla yapılandırılmış olur (`matchedTemplate` alanında
-  görülür). 59 eczacı odasının çoğu bu tip ile eklendi çünkü aynı birkaç
-  web sitesi şablonunu paylaşıyorlar. Hiçbiri eşleşmezse "yapılandırma
-  bekliyor" olur ve `type: "html"`'e elle CSS seçicisiyle geçmek gerekir.
-  Yeni bir ortak şablon keşfedildikçe `TEMPLATE_LIBRARY`'ye eklemek, o
-  şablonu kullanan tüm kaynakları otomatik kapsar.
+- `type: "auto-template"` → sırayla üç yöntem dener ve ilk tutan kazanır:
+  1. **RSS keşfi**
+  2. **`TEMPLATE_LIBRARY`** — bilinen ortak site şablonları (ör. "duzce-tarzi",
+     "aeo-tarzi"); biri ≥2 anlamlı öğe üretirse eşleşmiş sayılır.
+  3. **Otomatik keşif (`oto-keşif`)** — sayfadaki bağlantıları yapısal
+     imzalarına (kendi + 2 üst elemanın etiket/sınıf zinciri) göre gruplayıp
+     haber listesini kendiliğinden bulur. Menüden ayırt etmek için en güçlü
+     işaret öğenin yanında bir tarih bulunmasıdır; puanlama bunu ödüllendirir,
+     `nav`/`footer`/`header` içindeki bağlantıları ve "Tümü", "Devamı" gibi
+     kısa/genel başlıkları eler. 59 odanın siteleri birbirinden çok farklı
+     olduğu için her birine elle seçici yazmak ölçeklenmiyordu; bu yöntem
+     43 odanın 41'ini elle yapılandırma olmadan çalışır hale getirdi.
+
+  Hangi yöntemin tuttuğu `data/news.json` içindeki `matchedTemplate`
+  alanında görünür. Hiçbiri tutmazsa kaynak "yapılandırma bekliyor" olur ve
+  `type: "html"`'e elle CSS seçicisiyle geçmek gerekir.
 - `type: "rss"` + `"feedUrl": "https://..."` → adresi bilinen bir RSS/Atom beslemesi.
 - `type: "html"` → CSS seçicili liste taraması, pratikte en güvenilir yöntem:
   ```json
@@ -106,19 +113,18 @@ python3 -m http.server 8080   # veya herhangi bir statik sunucu
 
 - 7 çekirdek kaynak (TİTCK duyuru + geri çekme, Sağlık Bakanlığı basın
   duyuruları, TEB, Düzce Eczacı Odası, Ankara Eczacı Odası, Eczacının Sesi)
-  `type: "html"` ile gerçek sayfa yapısı doğrulanarak eklendi (22.07.2026
-  tanılaması, bkz. `config/sources.json` `notes` alanları).
-- TEB'in resmi oda listesindeki
-  (`https://www.teb.org.tr/content/28/Eczac%C4%B1-Odalar%C4%B1-Listesi`)
-  kalan 57 eczacı odasının tamamı `type: "auto-template"` ile eklendi.
-  `data/news.json` içindeki `sources` listesinden hangilerinin otomatik
-  eşleştiğini (`matchedTemplate` alanı) ve hangilerinin "yapılandırma
-  bekliyor" kaldığını görebilirsiniz. Eşleşmeyenler için: tanılama
-  workflow'unu o kaynağın `homepage`'iyle çalıştırıp gerçek yapıyı görün,
-  `TEMPLATE_LIBRARY`'ye yeni bir şablon ekleyin (birden fazla oda aynı
-  şablonu kullanıyorsa) ya da o kaynağı `type: "html"` + özel seçicilerle
-  yapılandırın.
-- Bazı kaynaklarda (TEB, Sağlık Bakanlığı, Ankara Eczacı Odası ve
-  auto-template ile eşleşen bazı odalar) sayfa yapısı gereği ayrı bir
-  tarih alanı ayrıştırılamıyor; bu kaynaklardaki haberler tarama zamanına
-  göre sıralanır (başlıkta tarih bilgisi genelde zaten mevcuttur).
+  `type: "html"` ile gerçek sayfa yapısı doğrulanarak eklendi.
+- TEB'in resmi oda listesindeki 59 eczacı odasının tamamı sistemde.
+  Bunların çoğu `type: "auto-template"` altındaki **otomatik keşif** ile
+  elle yapılandırma olmadan çalışıyor (bkz. yukarısı).
+- Statik tarama ile alınamayan kaynaklar:
+  - **Giresun Eczacı Odası** — içerik JavaScript ile yükleniyor, sunucudan
+    gelen HTML boş kabuk. Tarayıcı tabanlı tarama gerektirir.
+  - **Karaman Eczacı Odası** — sunucu boş yanıt döndürüyor; site
+    erişilebilir olduğunda yeniden denenmeli.
+  - **Kahramanmaraş Eczacı Odası** — SSL sertifikası alan adıyla uyuşmuyor
+    (sitenin kendi yapılandırma hatası).
+  - **Amasya Eczacı Odası** — sunucu otomatik erişimi engelliyor (HTTP 403).
+- Bazı kaynaklarda sayfa yapısı gereği ayrı bir tarih alanı
+  ayrıştırılamıyor; bu haberler ilk keşfedildikleri ana (`firstSeenAt`)
+  göre sıralanır.
