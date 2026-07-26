@@ -182,6 +182,26 @@ function parseTurkishDate(text) {
   return null;
 }
 
+// Birçok site yayın tarihini haber adresine gömüyor
+// (ör. .../haber/sgk-odemesi-20260714-123454.html). Sayfada tarih
+// bulunamadığında bu son bir çare olarak kullanılır.
+function dateFromUrl(link) {
+  if (!link) return null;
+  const patterns = [/(20\d{2})(\d{2})(\d{2})/, /\/(20\d{2})\/(\d{1,2})\/(\d{1,2})/, /(20\d{2})-(\d{2})-(\d{2})/];
+  for (const re of patterns) {
+    const m = link.match(re);
+    if (!m) continue;
+    const [, y, mo, d] = m;
+    const year = Number(y);
+    const month = Number(mo);
+    const day = Number(d);
+    if (year < 2000 || year > 2035 || month < 1 || month > 12 || day < 1 || day > 31) continue;
+    const dt = new Date(Date.UTC(year, month - 1, day));
+    if (!Number.isNaN(dt.getTime()) && dt.getTime() <= Date.now() + 86400000) return dt.toISOString();
+  }
+  return null;
+}
+
 async function discoverFeedUrl(homepage) {
   try {
     const res = await fetchWithTimeout(homepage);
@@ -481,7 +501,7 @@ async function scrapeSource(source) {
       id: hashId(it.link),
       title: it.title,
       link: it.link,
-      publishedAt: it.publishedAt,
+      publishedAt: it.publishedAt || dateFromUrl(it.link),
       source: source.id,
       sourceName: source.name,
       category: source.category,
@@ -532,13 +552,28 @@ async function main() {
   // damgası alır. Sıralama buna göre yapıldığından yeni haberler listenin
   // tepesine çıkar (tarihi olmayan kaynaklarda fetchedAt her tarama değiştiği
   // için sıralama donuyordu; firstSeenAt bunu çözer).
+  //
+  // Ancak bir kaynak İLK kez başarıyla tarandığında sitedeki tüm arşiv birden
+  // gelir ("backfill"). Bunlar gerçekten yeni haber değil, yalnızca bizim için
+  // yeni. Tarihi olmayan arşiv kayıtlarına "şimdi" damgası vurulursa yıllar
+  // öncesine ait içerik listenin tepesine çıkıyordu. Bu yüzden ilk hasadı
+  // isBackfill ile işaretleyip sıralamada en sona alıyoruz.
   const prevById = new Map((previous.items || []).map((it) => [it.id, it]));
+  const knownSources = new Set((previous.items || []).map((it) => it.source));
+  // isBackfill her öğede AÇIKÇA saklanır. Alanın hiç bulunmaması, bu ayrımın
+  // eklenmesinden önce yazılmış eski bir kayıt demektir; yaşı bilinmeyen
+  // (tarihsiz) böyle kayıtlar bir kereye mahsus arşiv sayılır.
+  const backfillFlagOf = (it) =>
+    typeof it.isBackfill === 'boolean' ? it.isBackfill : !it.publishedAt;
   const merged = new Map();
-  for (const it of previous.items || []) merged.set(it.id, { ...it, alsoFrom: undefined });
+  for (const it of previous.items || []) {
+    merged.set(it.id, { ...it, alsoFrom: undefined, isBackfill: backfillFlagOf(it) });
+  }
   for (const it of freshItems) {
     const prev = prevById.get(it.id);
     const firstSeenAt = (prev && prev.firstSeenAt) || it.fetchedAt;
-    merged.set(it.id, { ...it, firstSeenAt });
+    const isBackfill = prev ? backfillFlagOf(prev) : !knownSources.has(it.source);
+    merged.set(it.id, { ...it, firstSeenAt, isBackfill });
   }
   for (const it of merged.values()) {
     if (!it.firstSeenAt) it.firstSeenAt = it.fetchedAt || it.publishedAt || null;
@@ -546,10 +581,22 @@ async function main() {
 
   const sourcePriority = new Map(sources.map((s) => [s.id, s.priority ?? 99]));
   let allItems = dedupeItems(Array.from(merged.values()), sourcePriority);
+
+  // Sıralama iki katmanlı:
+  //  1) Yaşı bilinen haberler (gerçek yayın tarihi VEYA sonraki taramalarda
+  //     yeni belirdiği için varış zamanı güvenilir olanlar) — yeniden eskiye.
+  //  2) Yaşı bilinmeyen arşiv kayıtları (ilk hasatta gelen, tarihsiz) — altta.
+  // Böylece tarihsiz eski içerik güncel haberlerin önüne geçemiyor.
+  const rankOf = (it) => {
+    if (it.publishedAt) return { tier: 0, t: Date.parse(it.publishedAt) };
+    if (it.isBackfill) return { tier: 1, t: Date.parse(it.firstSeenAt || it.fetchedAt || 0) };
+    return { tier: 0, t: Date.parse(it.firstSeenAt || it.fetchedAt || 0) };
+  };
   allItems.sort((a, b) => {
-    const da = Date.parse(a.publishedAt || a.firstSeenAt || a.fetchedAt || 0);
-    const db = Date.parse(b.publishedAt || b.firstSeenAt || b.fetchedAt || 0);
-    return db - da;
+    const ra = rankOf(a);
+    const rb = rankOf(b);
+    if (ra.tier !== rb.tier) return ra.tier - rb.tier;
+    return rb.t - ra.t;
   });
   allItems = allItems.slice(0, MAX_TOTAL_ITEMS);
 

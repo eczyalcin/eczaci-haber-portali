@@ -108,6 +108,27 @@ html, body {
 .search-row {
   max-width: 1080px;
   margin: 0.9rem auto 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.age-filter {
+  flex-shrink: 0;
+  padding: 0.6rem 0.7rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.age-filter:focus { outline: 2px solid #fff; outline-offset: 2px; }
+
+@media (max-width: 520px) {
+  .search-row { flex-wrap: wrap; }
+  .age-filter { width: 100%; }
 }
 
 #searchInput {

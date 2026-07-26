@@ -14,6 +14,7 @@
     generatedAt: null,
     activeTab: ALL_TAB.id,
     query: '',
+    maxAgeDays: loadAgePreference(),
   };
 
   var tabsEl = document.getElementById('tabs');
@@ -22,6 +23,48 @@
   var searchInput = document.getElementById('searchInput');
   var refreshBtn = document.getElementById('refreshBtn');
   var sourcesLink = document.getElementById('sourcesLink');
+  var ageFilter = document.getElementById('ageFilter');
+
+  var AGE_STORAGE_KEY = 'ehm.maxAgeDays';
+  var DEFAULT_MAX_AGE_DAYS = 90;
+
+  function loadAgePreference() {
+    try {
+      var saved = window.localStorage.getItem(AGE_STORAGE_KEY);
+      if (saved !== null && !isNaN(Number(saved))) return Number(saved);
+    } catch (e) { /* localStorage kapalı olabilir */ }
+    return DEFAULT_MAX_AGE_DAYS;
+  }
+
+  // Haberin "yaşı" için en güvenilir zaman: gerçek yayın tarihi; yoksa
+  // portalın onu ilk gördüğü an.
+  function effectiveTime(it) {
+    var t = Date.parse(it.publishedAt || it.firstSeenAt || it.fetchedAt || '');
+    return isNaN(t) ? null : t;
+  }
+
+  // Tarama betiğiyle aynı iki katmanlı sıralama; veri dosyasının sırasına
+  // bağımlı kalmamak için arayüz de kendi sıralamasını yapar.
+  //  0. katman: yaşı bilinen haberler (gerçek yayın tarihi ya da güvenilir
+  //     varış zamanı) — yeniden eskiye.
+  //  1. katman: ilk hasatta gelen tarihsiz arşiv kayıtları — en altta.
+  function sortItems(items) {
+    return items.slice().sort(function (a, b) {
+      var ta = a.publishedAt ? 0 : (a.isBackfill ? 1 : 0);
+      var tb = b.publishedAt ? 0 : (b.isBackfill ? 1 : 0);
+      if (ta !== tb) return ta - tb;
+      return (effectiveTime(b) || 0) - (effectiveTime(a) || 0);
+    });
+  }
+
+  // Yayın tarihi bilinmeyen haberlerde "5 saat önce" demek yanıltıcı olur
+  // (2020'ye ait bir sayfa da bugün ilk kez görülmüş olabilir); bu yüzden
+  // bunlarda haberin yaşı değil, portala eklenme zamanı belirtilir.
+  function timeLabel(it) {
+    if (it.publishedAt) return formatRelativeTime(it.publishedAt);
+    var seen = formatRelativeTime(it.firstSeenAt);
+    return seen ? 'eklendi: ' + seen : '';
+  }
 
   function escapeHtml(str) {
     var div = document.createElement('div');
@@ -71,7 +114,7 @@
       var categories = await catRes.json();
 
       state.categories = categories;
-      state.items = news.items || [];
+      state.items = sortItems(news.items || []);
       state.sources = news.sources || [];
       state.generatedAt = news.generatedAt || null;
 
@@ -111,6 +154,13 @@
 
   function currentItems() {
     var items = state.items;
+    if (state.maxAgeDays > 0) {
+      var cutoff = Date.now() - state.maxAgeDays * 24 * 60 * 60 * 1000;
+      items = items.filter(function (it) {
+        var t = effectiveTime(it);
+        return t === null || t >= cutoff; // yaşı hiç bilinmeyeni gizleme
+      });
+    }
     if (state.activeTab !== ALL_TAB.id) {
       items = items.filter(function (it) { return it.category === state.activeTab; });
     }
@@ -160,7 +210,7 @@
         '</a>' +
         '<div class="news-card-meta">' +
         '<span class="source-badge">' + escapeHtml(it.sourceName || it.source) + '</span>' +
-        '<span>' + escapeHtml(formatRelativeTime(it.publishedAt || it.fetchedAt)) + '</span>' +
+        '<span>' + escapeHtml(timeLabel(it)) + '</span>' +
         '</div>' +
         alsoFromHtml +
         '</article>';
@@ -203,6 +253,13 @@
 
   searchInput.addEventListener('input', function (e) {
     state.query = e.target.value;
+    renderContent();
+  });
+
+  ageFilter.value = String(state.maxAgeDays);
+  ageFilter.addEventListener('change', function (e) {
+    state.maxAgeDays = Number(e.target.value);
+    try { window.localStorage.setItem(AGE_STORAGE_KEY, String(state.maxAgeDays)); } catch (err) { /* yoksay */ }
     renderContent();
   });
 
