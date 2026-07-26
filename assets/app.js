@@ -7,6 +7,17 @@
   var ALL_TAB = { id: 'tumu', label: 'Tüm Haberler', description: 'Tüm kaynaklardan gelen haber ve duyurular' };
   var SOURCES_TAB = { id: 'kaynaklar', label: 'Kaynaklar', description: 'Taranan kaynakların listesi ve güncel durumu' };
 
+  var AGE_STORAGE_KEY = 'ehm.maxAgeDays';
+  var DEFAULT_MAX_AGE_DAYS = 90;
+
+  function loadAgePreference() {
+    try {
+      var saved = window.localStorage.getItem(AGE_STORAGE_KEY);
+      if (saved !== null && !isNaN(Number(saved))) return Number(saved);
+    } catch (e) { /* localStorage kapalı olabilir */ }
+    return DEFAULT_MAX_AGE_DAYS;
+  }
+
   var state = {
     categories: [],
     items: [],
@@ -25,22 +36,18 @@
   var sourcesLink = document.getElementById('sourcesLink');
   var ageFilter = document.getElementById('ageFilter');
 
-  var AGE_STORAGE_KEY = 'ehm.maxAgeDays';
-  var DEFAULT_MAX_AGE_DAYS = 90;
-
-  function loadAgePreference() {
-    try {
-      var saved = window.localStorage.getItem(AGE_STORAGE_KEY);
-      if (saved !== null && !isNaN(Number(saved))) return Number(saved);
-    } catch (e) { /* localStorage kapalı olabilir */ }
-    return DEFAULT_MAX_AGE_DAYS;
-  }
-
   // Haberin "yaşı" için en güvenilir zaman: gerçek yayın tarihi; yoksa
   // portalın onu ilk gördüğü an.
   function effectiveTime(it) {
     var t = Date.parse(it.publishedAt || it.firstSeenAt || it.fetchedAt || '');
     return isNaN(t) ? null : t;
+  }
+
+  // Yaşı ispatlanamayan haber: gerçek yayın tarihi yok VE ilk hasatta gelen
+  // arşiv kaydı (isBackfill). Bu ayrımın eklenmesinden önce yazılmış eski
+  // kayıtlarda alan hiç bulunmaz; tarihsizlerse onlar da bilinmeyen sayılır.
+  function isUnknownAge(it) {
+    return !it.publishedAt && it.isBackfill !== false;
   }
 
   // Tarama betiğiyle aynı iki katmanlı sıralama; veri dosyasının sırasına
@@ -50,8 +57,8 @@
   //  1. katman: ilk hasatta gelen tarihsiz arşiv kayıtları — en altta.
   function sortItems(items) {
     return items.slice().sort(function (a, b) {
-      var ta = a.publishedAt ? 0 : (a.isBackfill ? 1 : 0);
-      var tb = b.publishedAt ? 0 : (b.isBackfill ? 1 : 0);
+      var ta = isUnknownAge(a) ? 1 : 0;
+      var tb = isUnknownAge(b) ? 1 : 0;
       if (ta !== tb) return ta - tb;
       return (effectiveTime(b) || 0) - (effectiveTime(a) || 0);
     });
@@ -152,13 +159,32 @@
     });
   }
 
+  // Sekme + arama uygulanmış, yaş filtresi uygulanmamış liste (gizlenen
+  // haber sayısını bildirebilmek için).
+  function itemsBeforeAgeFilter() {
+    var items = state.items;
+    if (state.activeTab !== ALL_TAB.id) {
+      items = items.filter(function (it) { return it.category === state.activeTab; });
+    }
+    var q = state.query.trim().toLocaleLowerCase('tr');
+    if (q) {
+      items = items.filter(function (it) {
+        return (it.title || '').toLocaleLowerCase('tr').indexOf(q) !== -1;
+      });
+    }
+    return items;
+  }
+
   function currentItems() {
     var items = state.items;
     if (state.maxAgeDays > 0) {
       var cutoff = Date.now() - state.maxAgeDays * 24 * 60 * 60 * 1000;
       items = items.filter(function (it) {
+        // Yaşı ispatlanamayan (tarihsiz arşiv) haber, seçilen aralıkta
+        // olduğu garanti edilemediği için gizlenir; "Tümü" seçilirse görünür.
+        if (isUnknownAge(it)) return false;
         var t = effectiveTime(it);
-        return t === null || t >= cutoff; // yaşı hiç bilinmeyeni gizleme
+        return t !== null && t >= cutoff;
       });
     }
     if (state.activeTab !== ALL_TAB.id) {
@@ -183,7 +209,16 @@
     var desc = activeCat ? activeCat.description : ALL_TAB.description;
     var items = currentItems();
 
-    var html = '<p class="category-desc">' + escapeHtml(desc) + '</p>';
+    var html = '<p class="category-desc">' + escapeHtml(desc);
+    if (state.maxAgeDays > 0) {
+      var hidden = itemsBeforeAgeFilter().length - items.length;
+      if (hidden > 0) {
+        html +=
+          ' <span class="filter-note">· ' + hidden +
+          ' haber gizlendi (' + state.maxAgeDays + ' günden eski ya da tarihi bilinmeyen)</span>';
+      }
+    }
+    html += '</p>';
 
     if (items.length === 0) {
       html +=
