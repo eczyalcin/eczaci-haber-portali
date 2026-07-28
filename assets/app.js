@@ -43,11 +43,12 @@
     return isNaN(t) ? null : t;
   }
 
-  // Yaşı ispatlanamayan haber: gerçek yayın tarihi yok VE ilk hasatta gelen
-  // arşiv kaydı (isBackfill). Bu ayrımın eklenmesinden önce yazılmış eski
-  // kayıtlarda alan hiç bulunmaz; tarihsizlerse onlar da bilinmeyen sayılır.
+  // Yayın tarihi olmayan haberin yaşı bilinemez. "İlk görülme" zamanı onun
+  // yaşı değildir: 2020'ye ait bir sayfa da bugün ilk kez görülmüş olabilir.
+  // Bu yüzden tarihsiz haberler istisnasız "yaşı bilinmeyen" sayılır; zaman
+  // aralığı filtresinde gizlenir, "Tümü" seçilirse görünür.
   function isUnknownAge(it) {
-    return !it.publishedAt && it.isBackfill !== false;
+    return !it.publishedAt;
   }
 
   // Tarama betiğiyle aynı iki katmanlı sıralama; veri dosyasının sırasına

@@ -16,7 +16,7 @@ const SOURCES_PATH = path.join(BASE_DIR, 'config', 'sources.json');
 const DATA_PATH = path.join(BASE_DIR, 'data', 'news.json');
 
 const MAX_ITEMS_PER_SOURCE = 40;
-const MAX_TOTAL_ITEMS = 500;
+const MAX_TOTAL_ITEMS = 3000;
 const FETCH_TIMEOUT_MS = 15000;
 const DEDUPE_WINDOW_MS = 5 * 24 * 60 * 60 * 1000; // 5 gün
 const USER_AGENT =
@@ -553,27 +553,13 @@ async function main() {
   // tepesine çıkar (tarihi olmayan kaynaklarda fetchedAt her tarama değiştiği
   // için sıralama donuyordu; firstSeenAt bunu çözer).
   //
-  // Ancak bir kaynak İLK kez başarıyla tarandığında sitedeki tüm arşiv birden
-  // gelir ("backfill"). Bunlar gerçekten yeni haber değil, yalnızca bizim için
-  // yeni. Tarihi olmayan arşiv kayıtlarına "şimdi" damgası vurulursa yıllar
-  // öncesine ait içerik listenin tepesine çıkıyordu. Bu yüzden ilk hasadı
-  // isBackfill ile işaretleyip sıralamada en sona alıyoruz.
   const prevById = new Map((previous.items || []).map((it) => [it.id, it]));
-  const knownSources = new Set((previous.items || []).map((it) => it.source));
-  // isBackfill her öğede AÇIKÇA saklanır. Alanın hiç bulunmaması, bu ayrımın
-  // eklenmesinden önce yazılmış eski bir kayıt demektir; yaşı bilinmeyen
-  // (tarihsiz) böyle kayıtlar bir kereye mahsus arşiv sayılır.
-  const backfillFlagOf = (it) =>
-    typeof it.isBackfill === 'boolean' ? it.isBackfill : !it.publishedAt;
   const merged = new Map();
-  for (const it of previous.items || []) {
-    merged.set(it.id, { ...it, alsoFrom: undefined, isBackfill: backfillFlagOf(it) });
-  }
+  for (const it of previous.items || []) merged.set(it.id, { ...it, alsoFrom: undefined });
   for (const it of freshItems) {
     const prev = prevById.get(it.id);
     const firstSeenAt = (prev && prev.firstSeenAt) || it.fetchedAt;
-    const isBackfill = prev ? backfillFlagOf(prev) : !knownSources.has(it.source);
-    merged.set(it.id, { ...it, firstSeenAt, isBackfill });
+    merged.set(it.id, { ...it, firstSeenAt });
   }
   for (const it of merged.values()) {
     if (!it.firstSeenAt) it.firstSeenAt = it.fetchedAt || it.publishedAt || null;
@@ -587,11 +573,14 @@ async function main() {
   //     yeni belirdiği için varış zamanı güvenilir olanlar) — yeniden eskiye.
   //  2) Yaşı bilinmeyen arşiv kayıtları (ilk hasatta gelen, tarihsiz) — altta.
   // Böylece tarihsiz eski içerik güncel haberlerin önüne geçemiyor.
-  const rankOf = (it) => {
-    if (it.publishedAt) return { tier: 0, t: Date.parse(it.publishedAt) };
-    if (it.isBackfill) return { tier: 1, t: Date.parse(it.firstSeenAt || it.fetchedAt || 0) };
-    return { tier: 0, t: Date.parse(it.firstSeenAt || it.fetchedAt || 0) };
-  };
+  // Yayın tarihi olmayan haberin yaşı bilinemez: "ilk görülme" zamanı onun
+  // yaşı DEĞİLDİR (2020'ye ait bir sayfa da bugün ilk kez görülmüş olabilir,
+  // ayrıca listeden düşüp yeniden bulunduğunda bu damga sıfırlanır). Bu yüzden
+  // tarihsiz haberler istisnasız alt katmanda kalır.
+  const rankOf = (it) =>
+    it.publishedAt
+      ? { tier: 0, t: Date.parse(it.publishedAt) }
+      : { tier: 1, t: Date.parse(it.firstSeenAt || it.fetchedAt || 0) };
   allItems.sort((a, b) => {
     const ra = rankOf(a);
     const rb = rankOf(b);
