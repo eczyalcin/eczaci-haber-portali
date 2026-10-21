@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T04:30:55.576Z",
+  "generatedAt": "2026-10-21T12:08:33.657Z",
   "sources": [
     {
       "id": "titck-duyuru",
@@ -293,7 +293,7 @@
       "category": "teb-odalar",
       "homepage": "https://www.aydineczaciodasi.org.tr/",
       "status": "error",
-      "error": "HTTP 403",
+      "error": "fetch failed: Connect Timeout Error (attempted address: www.aydineczaciodasi.org.tr:443, timeout: 10000ms)",
       "itemCount": 0,
       "discoveredFeedUrl": null,
       "matchedTemplate": null
@@ -304,7 +304,7 @@
       "category": "teb-odalar",
       "homepage": "https://www.malatyaeczaciodasi.org.tr/index.php",
       "status": "error",
-      "error": "HTTP 403",
+      "error": "fetch failed: Connect Timeout Error (attempted address: www.malatyaeczaciodasi.org.tr:443, timeout: 10000ms)",
       "itemCount": 0,
       "discoveredFeedUrl": null,
       "matchedTemplate": null
@@ -726,8 +726,62 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-09-26T16:00:14.017Z"
+    },
+    {
+      "id": "f64133d06aea6254",
+      "title": "Haberin tamamını oku",
+      "link": "https://www.usakeczaciodasi.org.tr/icerik/detay/1226",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "source": "usak-eczaci-odasi",
+      "sourceName": "Uşak Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-10-21T11:54:06.995Z",
+      "firstSeenAt": "2026-10-21T11:54:06.995Z"
+    },
+    {
+      "id": "c4e75b8af3f7e460",
+      "title": "Quality of Herbal Products Kongresi’ne Katılım",
+      "link": "https://www.teb.org.tr/news/e5552a7a-d913-4edf-81ec-0ab8261e5fc5/quality-of-herbal-products-kongresine-katilim",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
+      "firstSeenAt": "2026-10-21T11:21:34.003Z"
+    },
+    {
+      "id": "ad03216747ace506",
+      "title": "Beşeri Tıbbi Ürünler İmalathaneleri Yönetmeliğinde Yapılan Değişiklik Hakkında",
+      "link": "https://www.teb.org.tr/news/1aba30df-6955-4639-b3f2-dd96fe3ccca6/beseri-tibbi-urunler-imalathaneleri-yonetmeliginde-yapilan-degisiklik-hakkinda",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "source": "teb",
+      "sourceName": "Türk Eczacıları Birliği",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
+      "firstSeenAt": "2026-10-21T11:21:34.003Z",
+      "alsoFrom": [
+        {
+          "sourceName": "İstanbul Eczacı Odası",
+          "link": "https://www.istanbuleczaciodasi.org.tr/?page=icerikler&id=16105"
+        },
+        {
+          "sourceName": "Konya Eczacı Odası",
+          "link": "https://www.keo.org.tr/sayfa/beseri-tibbi-urunler-imalathaneleri-yonetmeliginde-yapilan-degisiklik-hakkinda-660495/"
+        }
+      ]
+    },
+    {
+      "id": "a87406565411a08e",
+      "title": "EYS Duyurusu",
+      "link": "https://www.eczacininsesi.com/haber/eys-duyurusu-20261021-095013.html",
+      "publishedAt": "2026-10-21T00:00:00.000Z",
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
+      "firstSeenAt": "2026-10-21T11:21:36.910Z"
     },
     {
       "id": "5833bdc4f4eee5a1",
@@ -737,7 +791,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-20T08:16:43.291Z"
     },
     {
@@ -748,7 +802,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-20T08:16:43.291Z"
     },
     {
@@ -759,7 +813,7 @@
       "source": "konya-eczaci-odasi",
       "sourceName": "Konya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:15.821Z",
+      "fetchedAt": "2026-10-21T11:21:47.149Z",
       "firstSeenAt": "2026-10-20T14:10:09.085Z"
     },
     {
@@ -770,8 +824,22 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
-      "firstSeenAt": "2026-10-20T19:00:27.579Z"
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
+      "firstSeenAt": "2026-10-20T19:00:27.579Z",
+      "alsoFrom": [
+        {
+          "sourceName": "İstanbul Eczacı Odası",
+          "link": "https://www.istanbuleczaciodasi.org.tr/?page=icerikler&id=16104"
+        },
+        {
+          "sourceName": "Konya Eczacı Odası",
+          "link": "https://www.keo.org.tr/sayfa/eczaci-yerlestirme-sistemi-eys-2026-yili-3-donem-yerlestirme-basvurusu-hakkinda-519355/"
+        },
+        {
+          "sourceName": "Antalya Eczacı Odası",
+          "link": "https://www.antalyaeo.org.tr/tr/m/turk-eczacilari-birligi/eczaci-yerlestirme-sistemi-eys-2026-yili-3-donem-yerlestirme-basvurusu-hakkinda.html"
+        }
+      ]
     },
     {
       "id": "d97499398d3f8ccf",
@@ -781,7 +849,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-19T20:25:19.587Z"
     },
     {
@@ -804,7 +872,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-19T20:26:04.341Z",
       "alsoFrom": [
         {
@@ -821,7 +889,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-20T14:09:55.451Z"
     },
     {
@@ -832,7 +900,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-18T20:15:50.147Z",
       "alsoFrom": [
         {
@@ -849,7 +917,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-16T10:56:52.548Z"
     },
     {
@@ -860,7 +928,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-16T10:56:52.548Z"
     },
     {
@@ -871,7 +939,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-16T10:57:01.032Z"
     },
     {
@@ -882,7 +950,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-16T10:57:35.142Z"
     },
     {
@@ -893,7 +961,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-16T16:16:08.778Z"
     },
     {
@@ -904,7 +972,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-20T19:00:42.081Z"
     },
     {
@@ -926,7 +994,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-14T08:28:41.940Z",
       "alsoFrom": [
         {
@@ -980,7 +1048,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-14T14:23:13.963Z"
     },
     {
@@ -991,7 +1059,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-14T14:23:20.788Z"
     },
     {
@@ -1002,7 +1070,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-14T14:23:20.788Z"
     },
     {
@@ -1013,7 +1081,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-14T19:13:22.886Z"
     },
     {
@@ -1024,7 +1092,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-14T19:13:22.886Z"
     },
     {
@@ -1035,7 +1103,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-10-13T13:58:44.491Z"
     },
     {
@@ -1057,7 +1125,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-13T20:33:10.641Z"
     },
     {
@@ -1068,7 +1136,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-10-12T21:03:31.285Z"
     },
     {
@@ -1079,7 +1147,7 @@
       "source": "teb",
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:00.412Z",
+      "fetchedAt": "2026-10-21T11:21:34.003Z",
       "firstSeenAt": "2026-10-12T21:02:08.553Z"
     },
     {
@@ -1871,7 +1939,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-08T10:11:04.621Z"
     },
     {
@@ -2223,7 +2291,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-09T10:12:05.259Z"
     },
     {
@@ -2234,7 +2302,7 @@
       "source": "istanbul-eczaci-odasi",
       "sourceName": "İstanbul Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:07.729Z",
+      "fetchedAt": "2026-10-21T11:21:40.151Z",
       "firstSeenAt": "2026-10-09T10:12:05.259Z"
     },
     {
@@ -2931,10 +2999,6 @@
       "firstSeenAt": "2026-10-06T12:57:29.859Z",
       "alsoFrom": [
         {
-          "sourceName": "İstanbul Eczacı Odası",
-          "link": "https://www.istanbuleczaciodasi.org.tr/?page=icerikler&id=16088"
-        },
-        {
           "sourceName": "Antalya Eczacı Odası",
           "link": "https://www.antalyaeo.org.tr/tr/m/turkiye-ilac-ve-tibbi-cihaz-kurumu/kozmetik-urunler-yonetmeligi-sorumlu-teknik-elemanin-gorev-ve-sorumluluklarina-iliskin-kilavuz-guncellendi.html"
         }
@@ -2987,7 +3051,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-06T12:58:08.871Z"
     },
     {
@@ -3799,7 +3863,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-02T17:37:28.416Z"
     },
     {
@@ -4008,7 +4072,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-01T12:40:39.769Z"
     },
     {
@@ -4019,7 +4083,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-10-01T12:40:39.769Z"
     },
     {
@@ -4349,7 +4413,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-29T12:22:41.342Z"
     },
     {
@@ -5459,7 +5523,7 @@
       "source": "usak-eczaci-odasi",
       "sourceName": "Uşak Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:15:47.507Z",
+      "fetchedAt": "2026-10-21T11:54:06.995Z",
       "firstSeenAt": "2026-09-24T11:30:33.440Z",
       "alsoFrom": []
     },
@@ -5537,7 +5601,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-09-24T16:43:05.840Z"
     },
     {
@@ -5834,7 +5898,7 @@
       "source": "konya-eczaci-odasi",
       "sourceName": "Konya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:15.821Z",
+      "fetchedAt": "2026-10-21T11:21:47.149Z",
       "firstSeenAt": "2026-09-23T16:20:59.929Z"
     },
     {
@@ -5856,7 +5920,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-09-23T16:21:24.133Z"
     },
     {
@@ -5944,7 +6008,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-09-24T11:19:17.126Z"
     },
     {
@@ -6373,7 +6437,7 @@
       "source": "konya-eczaci-odasi",
       "sourceName": "Konya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:15.821Z",
+      "fetchedAt": "2026-10-21T11:21:47.149Z",
       "firstSeenAt": "2026-09-21T19:54:00.585Z"
     },
     {
@@ -6516,7 +6580,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-18T10:47:07.507Z"
     },
     {
@@ -6703,7 +6767,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-17T11:14:09.865Z"
     },
     {
@@ -7055,7 +7119,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-16T11:03:21.148Z"
     },
     {
@@ -7589,7 +7653,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-14T12:09:34.941Z"
     },
     {
@@ -7669,10 +7733,6 @@
       "fetchedAt": "2026-09-24T11:18:38.037Z",
       "firstSeenAt": "2026-09-14T12:07:35.707Z",
       "alsoFrom": [
-        {
-          "sourceName": "Konya Eczacı Odası",
-          "link": "https://www.keo.org.tr/sayfa/2026-yili-haziran-ayi-saglik-odemeleri-hakkinda-483322/"
-        },
         {
           "sourceName": "Antalya Eczacı Odası",
           "link": "https://www.antalyaeo.org.tr/tr/m/sosyal-guvenlik-kurumu/2026-yili-haziran-ayi-saglik-odemeleri-hakkinda.html"
@@ -7775,7 +7835,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-09-14T12:08:33.532Z"
     },
     {
@@ -8084,13 +8144,7 @@
       "sourceName": "Türk Eczacıları Birliği",
       "category": "teb-odalar",
       "fetchedAt": "2026-09-23T10:59:41.794Z",
-      "firstSeenAt": "2026-09-11T16:04:09.720Z",
-      "alsoFrom": [
-        {
-          "sourceName": "Antalya Eczacı Odası",
-          "link": "https://www.antalyaeo.org.tr/tr/m/turk-eczacilari-birligi/2026-yili-yardimci-eczaci-ucuncu-basvuru-donemi-yerlestirme-sonuclari1.html"
-        }
-      ]
+      "firstSeenAt": "2026-09-11T16:04:09.720Z"
     },
     {
       "id": "8e453b86205a3c80",
@@ -8695,7 +8749,7 @@
       "source": "ordu-eczaci-odasi",
       "sourceName": "Ordu Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:48:43.236Z",
+      "fetchedAt": "2026-10-21T11:27:07.657Z",
       "firstSeenAt": "2026-09-09T10:56:48.786Z"
     },
     {
@@ -10835,7 +10889,7 @@
       "source": "antalya-eczaci-odasi",
       "sourceName": "Antalya Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:36.795Z",
+      "fetchedAt": "2026-10-21T11:22:05.028Z",
       "firstSeenAt": "2026-08-29T20:37:28.883Z"
     },
     {
@@ -24409,14 +24463,58 @@
       "firstSeenAt": "2026-09-04T20:31:17.332Z"
     },
     {
+      "id": "8412fd9a8b297bee",
+      "title": "Geleceğin E Hali - Program",
+      "link": "https://www.eczacininsesi.com/haber/gelecegin-e-hali-program.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
+      "firstSeenAt": "2026-10-21T11:21:36.910Z"
+    },
+    {
+      "id": "56e742e371ee196c",
+      "title": "Yapay Zekadan Yaşam Tahmini",
+      "link": "https://www.eczacininsesi.com/haber/yapay-zekadan-yasam-tahmini.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
+      "firstSeenAt": "2026-10-21T11:21:36.910Z"
+    },
+    {
+      "id": "cedbbf2207248c87",
+      "title": "Sağlık Reformu Eczaneden Başlamalı",
+      "link": "https://www.eczacininsesi.com/haber/saglik-reformu-eczaneden-baslamali.html",
+      "publishedAt": null,
+      "source": "eczacinin-sesi",
+      "sourceName": "Eczacının Sesi",
+      "category": "sektor",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
+      "firstSeenAt": "2026-10-21T11:21:36.910Z"
+    },
+    {
+      "id": "dcc990820668ec6f",
+      "title": "Bartu Eczanesi Sahibi ve Mesul Müdürü Ecz. Murat Yaşar BALCI'nın Annesi, Ecz. Cavit BARIN'ın Ablası Semahat BALCI Vefat Etmiştir.",
+      "link": "https://www.aeo.org.tr/bartu-eczanesi-sahibi-ve-mesul-muduru-murat-yasar-balcinin-annesi-ecz-cavit-barinin-ablasi-semahat-balci-vefat-etmistir",
+      "publishedAt": null,
+      "source": "ankara-eczaci-odasi",
+      "sourceName": "Ankara Eczacı Odası",
+      "category": "teb-odalar",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
+      "firstSeenAt": "2026-10-21T11:21:35.913Z"
+    },
+    {
       "id": "88a5bc2510d14397",
-      "title": "Enteresan işler oluyor…",
+      "title": "Enteresan İşler Oluyor…",
       "link": "https://www.eczacininsesi.com/haber/enteresan-isler-oluyor.html",
       "publishedAt": null,
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-20T14:09:55.451Z"
     },
     {
@@ -24427,7 +24525,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-20T14:09:55.451Z"
     },
     {
@@ -24438,7 +24536,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-20T00:08:47.957Z"
     },
     {
@@ -24449,7 +24547,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-19T12:28:56.380Z"
     },
     {
@@ -24460,7 +24558,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-19T12:28:55.427Z"
     },
     {
@@ -24471,7 +24569,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-19T12:28:55.427Z"
     },
     {
@@ -24482,7 +24580,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-19T03:45:00.846Z"
     },
     {
@@ -24493,7 +24591,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-18T20:15:54.071Z"
     },
     {
@@ -24504,7 +24602,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-18T10:34:02.951Z"
     },
     {
@@ -24515,7 +24613,7 @@
       "source": "eczacinin-sesi",
       "sourceName": "Eczacının Sesi",
       "category": "sektor",
-      "fetchedAt": "2026-10-21T03:46:03.617Z",
+      "fetchedAt": "2026-10-21T11:21:36.910Z",
       "firstSeenAt": "2026-10-16T16:16:08.778Z"
     },
     {
@@ -24592,7 +24690,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24603,7 +24701,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24614,7 +24712,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24625,7 +24723,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24636,7 +24734,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24647,7 +24745,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24658,7 +24756,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24669,7 +24767,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24680,7 +24778,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24691,7 +24789,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24702,7 +24800,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24713,7 +24811,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24724,7 +24822,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24735,7 +24833,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24746,7 +24844,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24757,7 +24855,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24768,7 +24866,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24779,7 +24877,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24790,7 +24888,7 @@
       "source": "karaman-eczaci-odasi",
       "sourceName": "Karaman Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:18:20.150Z",
+      "fetchedAt": "2026-10-21T11:55:58.186Z",
       "firstSeenAt": "2026-10-14T14:57:52.981Z"
     },
     {
@@ -24867,7 +24965,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-13T05:56:53.712Z"
     },
     {
@@ -24878,7 +24976,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-13T05:56:53.712Z"
     },
     {
@@ -25087,7 +25185,7 @@
       "source": "ankara-eczaci-odasi",
       "sourceName": "Ankara Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:02.630Z",
+      "fetchedAt": "2026-10-21T11:21:35.913Z",
       "firstSeenAt": "2026-10-08T10:10:29.741Z"
     },
     {
@@ -25098,7 +25196,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-10-07T18:37:10.661Z"
     },
     {
@@ -25219,7 +25317,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-10-06T12:57:59.128Z"
     },
     {
@@ -25230,7 +25328,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-10-06T12:57:59.128Z"
     },
     {
@@ -25241,7 +25339,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-10-06T12:57:59.128Z"
     },
     {
@@ -26011,7 +26109,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-09-10T10:52:35.063Z"
     },
     {
@@ -26440,7 +26538,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-09-01T08:26:24.263Z"
     },
     {
@@ -26451,7 +26549,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-09-01T08:26:24.263Z"
     },
     {
@@ -26462,7 +26560,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-09-01T08:26:24.263Z"
     },
     {
@@ -26473,7 +26571,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-09-01T08:26:24.263Z"
     },
     {
@@ -26737,7 +26835,7 @@
       "source": "gaziantep-eczaci-odasi",
       "sourceName": "Gaziantep Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T03:46:27.421Z",
+      "fetchedAt": "2026-10-21T11:21:56.746Z",
       "firstSeenAt": "2026-08-25T06:51:28.276Z"
     },
     {
@@ -28607,7 +28705,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28618,7 +28716,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28629,7 +28727,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28640,7 +28738,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28651,7 +28749,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28662,7 +28760,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28673,7 +28771,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -28684,7 +28782,7 @@
       "source": "tokat-eczaci-odasi",
       "sourceName": "Tokat Eczacı Odası",
       "category": "teb-odalar",
-      "fetchedAt": "2026-10-21T04:10:57.036Z",
+      "fetchedAt": "2026-10-21T11:49:17.142Z",
       "firstSeenAt": "2026-07-28T21:23:47.535Z"
     },
     {
@@ -29234,7 +29332,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29245,7 +29343,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29256,7 +29354,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29267,7 +29365,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29278,7 +29376,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29289,7 +29387,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29300,7 +29398,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29311,7 +29409,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29322,7 +29420,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29333,7 +29431,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.213Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.071Z"
     },
     {
@@ -29344,7 +29442,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.070Z"
     },
     {
@@ -29355,7 +29453,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.070Z"
     },
     {
@@ -29366,7 +29464,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.070Z"
     },
     {
@@ -29377,7 +29475,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.070Z"
     },
     {
@@ -29388,7 +29486,7 @@
       "source": "saglik-bakanligi",
       "sourceName": "T.C. Sağlık Bakanlığı - Basın Duyuruları",
       "category": "resmi-kurumlar",
-      "fetchedAt": "2026-10-21T03:45:58.212Z",
+      "fetchedAt": "2026-10-21T11:21:32.215Z",
       "firstSeenAt": "2026-07-28T21:20:32.070Z"
     },
     {
